@@ -1,0 +1,19 @@
+{
+    "name": "open-idc/edtalks-theme",
+    "description": "Drupal 8 Bootstrap 3 subtheme for EdTalks.",
+    "type": "drupal-custom-theme",
+    "homepage": "https://github.com/open-idc/edtalks-themee",
+    "authors": [
+        {
+            "name": "Yasin Dahi (ydahi)",
+            "homepage": "https://github.com/ymdahi",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/open-idc/edtalks-theme",
+        "source": "https://github.com/open-idc/edtalks-theme"
+    },
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev"
+}
