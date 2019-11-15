@@ -1,3 +1,18 @@
+/**
+   ____                      ________  ______
+  / __ \____  ___  ____     /  _/ __ \/ ____/
+ / / / / __ \/ _ \/ __ \    / // / / / /     
+/ /_/ / /_/ /  __/ / / /  _/ // /_/ / /___   
+\____/ .___/\___/_/ /_/  /___/_____/\____/   
+    /_/                                      
+
+**/
+/**
+  Build and designed by the members of
+  Open Instructional Design Co-Operative
+  www.openidc.ca
+**/
+
 :root {
     --primary: #4255bd;
     --primary-dark: #2e3b84;
@@ -24,4 +39,17 @@
     --black: #000000;
     --text-mid: #666666;
     --text-light: #AAAAAA;
+}
+
+
+header.navbar > .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+header.navbar > .container-fluid > .navbar-header {
+    grid-column: 1 / 9;
+}
+header.navbar > .container-fluid > .navbar-header {
+    grid-column: 9 / -1;
+    justify-self: end;
 }
