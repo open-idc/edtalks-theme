@@ -42,6 +42,9 @@
 }
 
 
+/**
+** Site Header
+**/
 header.navbar > .container-fluid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -49,7 +52,7 @@ header.navbar > .container-fluid {
 header.navbar > .container-fluid > .navbar-header {
     grid-column: 1 / 9;
 }
-header.navbar > .container-fluid > .navbar-header {
+header.navbar > .container-fluid > .navbar-collapse {
     grid-column: 9 / -1;
     justify-self: end;
 }
