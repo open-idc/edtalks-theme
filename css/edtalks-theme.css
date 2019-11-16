@@ -94,3 +94,11 @@ header.navbar .navbar-nav > li > a:active {
     background-color: var(--grey-lightest);
     color: black;
 }
+
+
+/**
+** Main content layout for Views
+**/
+body.path-frontpage .region-content {
+    
+}
