@@ -42,7 +42,7 @@
     --text-light: #AAAAAA;
 
 
-    --grey-lightest: #f4f4f4;
+    --grey-lightest: #f3f3f3;
 }
 
 /**
@@ -52,7 +52,9 @@ body {
     font-size: 14px;
     margin-top: 0;
 }
-
+body.navbar-is-fixed-top {
+    margin-top: 0;
+}
 @media (min-width: 2048px) {
     body {
         font-size: 16px;
@@ -102,6 +104,30 @@ header.navbar .navbar-nav > li > a:active {
     color: black;
 }
 
+
+/**
+** Page Top Bar
+**/
+.region.region-top-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    grid-gap: 30px;
+    background: var(--grey-lightest);
+    padding: 15px;
+}
+.region-top-bar > h1.page-header {
+    margin-top: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    align-self: center;
+}
+.region-top-bar > .views-exposed-form {
+    align-self: center;
+}
 
 /**
 ** Main content layout for Views
