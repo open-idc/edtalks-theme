@@ -75,6 +75,9 @@ header.navbar > .container-fluid > .navbar-collapse {
     grid-column: 9 / -1;
     justify-self: end;
 }
+.navbar .logo. > img {
+    max-height: 32px;
+}
 header.navbar .navbar-nav > li > a {
     font-weight: 700;
     text-transform: uppercase;
@@ -100,5 +103,5 @@ header.navbar .navbar-nav > li > a:active {
 ** Main content layout for Views
 **/
 body.path-frontpage .region-content {
-    
+
 }
