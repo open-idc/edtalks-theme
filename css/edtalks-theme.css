@@ -50,6 +50,7 @@
 **/
 body {
     font-size: 14px;
+    margin-top: 0;
 }
 
 @media (min-width: 2048px) {
@@ -63,6 +64,9 @@ body {
 **/
 header.navbar {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    margin: 0;
 }
 header.navbar > .container-fluid {
     display: grid;
