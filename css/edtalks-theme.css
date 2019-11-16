@@ -14,9 +14,10 @@
 **/
 
 :root {
-    --primary: #4255bd;
-    --primary-dark: #2e3b84;
-    --primary-light: #7b88d1;
+    --primary: #009688;
+    --primary-dark: #1c7e74;
+    --primary-light: #36d6c6;
+    --primary-10: rgba(0, 150, 136, 0.1);
     
     --secondary: #429ebd;
     --secondary-dark: #2e6f84;
@@ -39,12 +40,30 @@
     --black: #000000;
     --text-mid: #666666;
     --text-light: #AAAAAA;
+
+
+    --grey-lightest: #f4f4f4;
 }
 
+/**
+** Typography
+**/
+body {
+    font-size: 14px;
+}
+
+@media (min-width: 2048px) {
+    body {
+        font-size: 16px;
+    }
+}
 
 /**
 ** Site Header
 **/
+header.navbar {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
 header.navbar > .container-fluid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -55,4 +74,17 @@ header.navbar > .container-fluid > .navbar-header {
 header.navbar > .container-fluid > .navbar-collapse {
     grid-column: 9 / -1;
     justify-self: end;
+}
+header.navbar .navbar-nav > li > a {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20.5px 25px;
+    border-left: 1px solid var(--bg-highlight);
+    letter-spacing: 1px;
+}
+header.navbar .navbar-nav > li > a:hover,
+header.navbar .navbar-nav > li > a:focus,
+header.navbar .navbar-nav > li > a:active {
+    background-color: var(--primary-10);
+    color: var(--primary);
 }
