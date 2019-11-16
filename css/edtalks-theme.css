@@ -75,7 +75,7 @@ header.navbar > .container-fluid > .navbar-collapse {
     grid-column: 9 / -1;
     justify-self: end;
 }
-.navbar .logo. > img {
+.navbar .logo > img {
     max-height: 32px;
 }
 header.navbar .navbar-nav > li > a {
