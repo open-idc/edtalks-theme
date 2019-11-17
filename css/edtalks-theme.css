@@ -70,10 +70,17 @@ body.navbar-is-fixed-top {
 .btn {
     box-shadow: unset;
     font-size: inherit;
+    font-weight: 500;
+    text-transform: unset;
+    line-height: 1em;
 }
 .btn-primary {
     background-color: var(--primary-light);
     color: black;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--primary);
 }
 
 /**
