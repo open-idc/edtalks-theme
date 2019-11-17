@@ -178,9 +178,27 @@ header.navbar .navbar-nav > li > a:active {
 **/
 .view.maxwidth {
     max-width: 1240px;
-    margin: auto;
+    margin: 30px auto;
 }
 .view.grid-style-main > .view-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.grid-card-item > .card-media img {
+    object-fit: cover;
+}
+
+.grid-card-item > .card-authors ul {
+    padding: 0;
+    list-style: none;
+}
+.grid-card-item > .card-authors ul > li {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    display: none;
+}
+.grid-card-item > .card-authors ul > li:first-of-type {
+    display: block;
 }
