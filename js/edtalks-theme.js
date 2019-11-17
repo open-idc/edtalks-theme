@@ -9,7 +9,7 @@
         $('.form-type-select').each(function(){
           var selectLabel = $(".control-label", this);
           var selectEl = $(".select-wrapper > select", this);
-          $(selectEl).prepend(`<option disabled>${selectLabel.text()}</option>`);
+          $(selectEl).once().prepend(`<option disabled>${selectLabel.text()}</option>`);
           //$(selectEl).wrapInner(`<optgroup label="${selectLabel.text()}"></optgroup>`);
           $(selectLabel).css("display", "none");
         });
