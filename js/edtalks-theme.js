@@ -16,8 +16,9 @@
 
         // count and display number of presenters if more than 1
         $(".card-authors").each(function() {
-          if ($("ul > li", this).length > 1) {
-            $("li:first-of-type", this).append(` +${("ul > li", this).length} others`)
+          var numPresenters = $("ul > li", this).length;
+          if (numPresenters > 1) {
+            $("li:first-of-type", this).append(` +${numPresenters - 1} others`)
           }
         });
 
