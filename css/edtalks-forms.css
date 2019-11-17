@@ -1,3 +1,8 @@
+.form-inline {
+  display: grid;
+  grid-template-columns:  repeat(auto-fill, minmax(100px, 1fr));;
+}
+
 textarea, 
 textarea.form-control,
 input.form-control, 
