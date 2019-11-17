@@ -50,6 +50,7 @@ select.form-control {
 .select-wrapper:after {
   padding-right: 0;
   right: 10px;
+  color: #999;
 }
 select:focus,
 select.form-control:focus {

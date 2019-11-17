@@ -82,6 +82,12 @@ body.navbar-is-fixed-top {
 .btn-primary:focus {
     background-color: var(--primary);
 }
+.btn-primary:active {
+    background-color: var(--primary);
+    background-image: radial-gradient(circle, var(--primary) 10%, var(--primary-dark) 11%);
+    box-shadow: unset;
+}
+
 
 /**
 ** Site Header
