@@ -183,7 +183,7 @@ header.navbar .navbar-nav > li > a:active {
 .view.grid-style-main > .view-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 30px;
+    grid-gap: 60px 30px;
 }
 
 .grid-card-item > .card-media {
@@ -199,14 +199,14 @@ header.navbar .navbar-nav > li > a:active {
 .grid-card-item > .card-authors ul > li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 300;
     display: none;
 }
 .grid-card-item > .card-authors ul > li:first-of-type {
     display: block;
 }
 h3.card-title {
-    font-size: 16px;
+    font-size: 1.15em;
     margin: 0;
     padding: 0;
     font-weight: 900;
