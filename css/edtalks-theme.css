@@ -201,18 +201,10 @@ header.navbar .navbar-nav > li > a:active {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 300;
-    counter-increment: presenter-count;
     display: none;
 }
 .grid-card-item > .card-authors ul > li:first-of-type {
     display: block;
-}
-.grid-card-item > .card-authors ul:after {
-    content: ' + counter(presenter-count)';
-    display: block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: 300;
 }
 h3.card-title {
     font-size: 1.15em;

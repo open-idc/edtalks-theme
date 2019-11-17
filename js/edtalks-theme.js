@@ -14,6 +14,13 @@
           $(selectLabel).css("display", "none");
         });
 
+        // count and display number of presenters if more than 1
+        $(".card-authors").each(function() {
+          if ($("ul > li", this).length > 1) {
+            $("li:first-of-type", this).append(` +${("ul > li", this).length} others`)
+          }
+        });
+
 
       }
     }
