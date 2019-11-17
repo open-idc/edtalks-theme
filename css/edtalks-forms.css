@@ -1,6 +1,5 @@
-.form-inline {
-  display: grid;
-  grid-template-columns:  repeat(auto-fill, minmax(100px, 1fr));;
+.form-inline > .form-item {
+  margin-right: 10px;
 }
 
 textarea, 
@@ -20,7 +19,6 @@ input[type=number],
   padding: 0px 10px;
   box-shadow: unset;
   border: 1px solid var(--border-lightest);
-  margin-right: 10px;
 }
 
 textarea:focus, 
