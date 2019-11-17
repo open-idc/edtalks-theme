@@ -88,6 +88,17 @@ body.navbar-is-fixed-top {
     background-image: radial-gradient(circle, var(--primary) 10%, var(--primary-dark) 11%);
     box-shadow: unset;
 }
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+    background-color: slategrey;
+}
 
 
 /**
@@ -137,13 +148,17 @@ header.navbar .navbar-nav > li > a:active {
 /**
 ** Page Top Bar
 **/
+.top-bar {
+    background: var(--grey-lightest);
+    padding: 15px;
+}
 .region.region-top-bar {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: flex-start;
     grid-gap: 30px;
-    background: var(--grey-lightest);
-    padding: 15px;
+    max-width: 1240px;
+    margin: auto;
 }
 .region-top-bar > h1.page-header {
     margin-top: 0;
@@ -159,8 +174,13 @@ header.navbar .navbar-nav > li > a:active {
 }
 
 /**
-** Main content layout for Views
+** Grid Layout for Main View Pages
 **/
-body.path-frontpage .region-content {
-
+.view.maxwidth {
+    max-width: 1240px;
+    margin: auto;
+}
+.view.grid-style-main > .view-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
 }
