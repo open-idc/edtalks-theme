@@ -1,8 +1,53 @@
+textarea, 
+textarea.form-control,
+input.form-control, 
+input[type=text], 
+input[type=password], 
+input[type=email], 
+input[type=number], 
+[type=text].form-control, 
+[type=password].form-control,
+[type=email].form-control, 
+[type=tel].form-control,
+[contenteditable].form-control {
+  background-color: white;
+  border-radius: 4px;
+  padding: 0px 10px;
+  box-shadow: unset;
+  border: 1px solid var(--border-lightest);
+  margin-right: 10px;
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -2px 0 var(--primary);
+}
+
 select,
 select.form-control {
   background-image: unset;
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: unset;
+  border: 1px solid var(--border-lightest);
+}
+.select-wrapper:after {
+  padding-right: 0;
+  right: 10px;
 }
 select:focus,
 select.form-control:focus {
   background-image: unset;
+  box-shadow: inset 0 -2px 0 var(--primary);
 }
