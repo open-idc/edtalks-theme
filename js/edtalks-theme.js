@@ -18,7 +18,7 @@
         $(".card-authors").each(function() {
           var numPresenters = $("ul > li", this).length;
           if (numPresenters > 1) {
-            $("li:first-of-type", this).append(` +${numPresenters - 1} others`)
+            $("li:first-of-type", this).append(` +${numPresenters - 1}`)
           }
         });
 
