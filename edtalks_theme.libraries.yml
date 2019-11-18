@@ -6,5 +6,5 @@ global-styling:
       css/edtalks-forms.css: {}
   js:
     js/edtalks-theme.js: {}
-dependencies:
-  - core/jquery.once
+  dependencies:
+    - core/jquery.once
