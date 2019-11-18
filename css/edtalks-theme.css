@@ -117,7 +117,7 @@ header.navbar > .container-fluid {
 header.navbar > .container-fluid > .navbar-header {
     grid-column: 1 / -1;
 }
-header.navbar > .container-fluid > .navbar-offcanvas {
+header.navbar > .container-fluid > .navbar-collapse {
     grid-column: 1 / -1;
 }
 .navbar .logo > img {
@@ -142,11 +142,21 @@ header.navbar .navbar-nav > li > a:active {
     background-color: var(--grey-lightest);
     color: black;
 }
+
+#navbar-offcanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    background: white;
+    height: 100vh;
+}
+
 @media (min-width: 768px) {
     header.navbar > .container-fluid > .navbar-header {
         grid-column: 1 / 9;
     }
-    header.navbar > .container-fluid > .navbar-offcanvas {
+    header.navbar > .container-fluid > .navbar-collapse {
         grid-column: 9 / -1;
         justify-self: end;
     }

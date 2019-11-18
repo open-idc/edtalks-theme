@@ -52,6 +52,14 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+
+{# Navigation (offcanvas) #}
+{% if page.navigation_offcanvas %}
+  <div id="navbar-offcanvas" class="navbar-offcanvas offcanvas">
+    {{ page.navigation_offcanvas }}
+  </div>
+{% endif %}
+
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -79,10 +87,10 @@
         {% endif %}
       </div>
 
-      {# Navigation (offcanvas) #}
-      {% if page.navigation_offcanvas %}
-        <div id="navbar-offcanvas" class="navbar-offcanvas offcanvas">
-          {{ page.navigation_offcanvas }}
+      {# Navigation (collapsible) #}
+      {% if page.navigation_collapsible %}
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          {{ page.navigation_collapsible }}
         </div>
       {% endif %}
       {% if not navbar_attributes.hasClass(container) %}
