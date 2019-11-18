@@ -41,6 +41,10 @@
 }
 .grid-card-item > .card-authors ul > li:first-of-type {
     display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 135px;
 }
 h3.card-title {
     font-size: 1.15em;
@@ -56,6 +60,16 @@ h3.card-title a:focus {
     text-decoration: none;
     color: var(--primary-dark);
 }
+
+@media (min-width: 768px) {
+    .grid-card-item > .card-authors ul > li:first-of-type {
+        white-space: unset;
+        overflow: unset;
+        text-overflow: unset;
+        max-width: unset;
+    }
+}
+
 
 /** View Pager **/
 .view > nav.pager-nav {
