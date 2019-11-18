@@ -190,6 +190,7 @@ header.navbar .navbar-nav > li > a:active {
     }
     .region-top-bar > .views-exposed-form {
         grid-column: unset;
+        display: block !important;
     }
 }
 
