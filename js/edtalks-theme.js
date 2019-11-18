@@ -18,7 +18,19 @@
         $(".card-authors").each(function() {
           var numPresenters = $("ul > li", this).length;
           if (numPresenters > 1) {
-            $("li:first-of-type", this).append(` +${numPresenters - 1}`)
+            $("li:first-of-type", this).once().append(` +${numPresenters - 1}`)
+          }
+        });
+
+        // offcanvas menu
+        $('[data-toggle="offcanvas"]').click(function() {
+          if ($(this).hasClass("is-open")) {
+            console.log("open already");
+          } else {
+            var targetEl = $(this).attr("data-target");
+            (targetEl)
+              .addClass("is-open")
+              .css("left", "0px");
           }
         });
 
