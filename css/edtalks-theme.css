@@ -145,7 +145,7 @@ header.navbar .navbar-nav > li > a:active {
 #navbar-offcanvas {
     position: fixed;
     top: 0;
-    left: -80%;
+    left: -82%;
     width: 80%;
     background: white;
     height: 100vh;
