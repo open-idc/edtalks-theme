@@ -209,7 +209,7 @@ header.navbar .navbar-nav > li > a:active {
 #block-expandviewsexposedfiltersbutton {
     text-align: right;
 }
-#block-expandviewsexposedfiltersbutton button.views-filters-toggle {
+#block-expandviewsexposedfiltersbutton button.viewsfilters-toggle {
     padding: 0 10px;
     background-color: unset;
 }
