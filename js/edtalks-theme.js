@@ -23,7 +23,8 @@
         });
 
         // offcanvas menu
-        $('[data-toggle="offcanvas"]').click(function() {
+        $('[data-toggle="offcanvas"]').click(function(e) {
+          e.preventDefault();
           var targetEl = $(this).attr("data-target");
           if ($(targetEl).hasClass("is-open")) {
             console.log("open already");
@@ -38,7 +39,8 @@
             $("#off-canvas-overlay").css("display", "block");
           }
         });
-        $('#off-canvas-overlay').click(function() {
+        $('#off-canvas-overlay').click(function(e) {
+          e.preventDefault();
           $('#navbar-offcanvas.is-open').removeClass("is-open")
           .css("left", "-80%");
           $(this).css("display", "none");

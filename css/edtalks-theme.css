@@ -139,8 +139,8 @@ header.navbar .navbar-nav > li > a:active {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    background-color: var(--grey-lightest);
-    color: black;
+    background-color: unset;
+    color: var(--primary);
 }
 #navbar-offcanvas {
     position: fixed;
