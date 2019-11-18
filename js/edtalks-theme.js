@@ -23,7 +23,7 @@
         });
 
         // offcanvas menu
-        $('[data-toggle="offcanvas"]').click(function(e) {
+        $('button.navbar-toggle[data-toggle="offcanvas"]').click(function(e) {
           e.preventDefault();
           var targetEl = $(this).attr("data-target");
           if ($(targetEl).hasClass("is-open")) {
