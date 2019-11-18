@@ -172,7 +172,6 @@ header.navbar .navbar-nav > li > a:active {
 .region-top-bar > .views-exposed-form {
     align-self: center;
     grid-column: span 2;
-    display: none;
 }
 #block-expandviewsexposedfiltersbutton {
     text-align: right;
@@ -183,7 +182,6 @@ header.navbar .navbar-nav > li > a:active {
         justify-content: flex-start;
     }
     .region-top-bar > .views-exposed-form {
-        display: block;
         grid-column: unset;
     }
 }
