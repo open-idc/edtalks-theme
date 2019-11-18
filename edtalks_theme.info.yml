@@ -9,7 +9,7 @@ package: 'Bootstrap'
 regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
-  inner_nav: 'Inner Navigation (Collapsible)'
+  navigation_offcanvas: 'Navigation (Off canvas)'
   top_bar: 'Top Bar'
   header_nav: 'Header Nav'
   highlighted: 'Highlighted'

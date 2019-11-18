@@ -115,11 +115,10 @@ header.navbar > .container-fluid {
     grid-template-columns: repeat(12, 1fr);
 }
 header.navbar > .container-fluid > .navbar-header {
-    grid-column: 1 / 9;
+    grid-column: 1 / -1;
 }
 header.navbar > .container-fluid > .navbar-collapse {
-    grid-column: 9 / -1;
-    justify-self: end;
+    grid-column: 1 / -1;
 }
 .navbar .logo > img {
     max-height: 32px;
@@ -143,7 +142,15 @@ header.navbar .navbar-nav > li > a:active {
     background-color: var(--grey-lightest);
     color: black;
 }
-
+@media (min-width: 768px) {
+    header.navbar > .container-fluid > .navbar-header {
+        grid-column: 1 / 9;
+    }
+    header.navbar > .container-fluid > .navbar-collapse {
+        grid-column: 9 / -1;
+        justify-self: end;
+    }
+}
 
 /**
 ** Page Top Bar

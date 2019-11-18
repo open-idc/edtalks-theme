@@ -85,6 +85,12 @@
           {{ page.navigation_collapsible }}
         </div>
       {% endif %}
+      {# Navigation (offcanvas) #}
+      {% if page.navigation_offcanvas %}
+        <div id="navbar-offcanvas" class="navbar-offcanvas offcanvas">
+          {{ page.navigation_offcanvas }}
+        </div>
+      {% endif %}
       {% if not navbar_attributes.hasClass(container) %}
         </div>
       {% endif %}
