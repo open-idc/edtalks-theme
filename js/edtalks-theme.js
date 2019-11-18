@@ -10,7 +10,6 @@
           var selectLabel = $(".control-label", this);
           var selectEl = $(".select-wrapper > select", this);
           $(selectEl).once().prepend(`<option disabled>${selectLabel.text()}</option>`);
-          //$(selectEl).wrapInner(`<optgroup label="${selectLabel.text()}"></optgroup>`);
           $(selectLabel).css("display", "none");
         });
 
