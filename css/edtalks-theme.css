@@ -146,10 +146,11 @@ header.navbar .navbar-nav > li > a:active {
 #navbar-offcanvas {
     position: fixed;
     top: 0;
-    left: -250px;
-    width: 250px;
+    left: -80%;
+    width: 80%;
     background: white;
     height: 100vh;
+    z-index: 1031;
 }
 
 #off-canvas-overlay {

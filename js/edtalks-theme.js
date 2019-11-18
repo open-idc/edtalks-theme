@@ -25,15 +25,15 @@
         // offcanvas menu
         $('[data-toggle="offcanvas"]').click(function() {
           var targetEl = $(this).attr("data-target");
-          if ($(EventTarget).hasClass("is-open")) {
+          if ($(targetEl).hasClass("is-open")) {
             console.log("open already");
             $(targetEl)
               .removeClass("is-open")
-              .css("left", "-250px");
+              .css("left", "-80%");
           } else {
             $(targetEl)
               .addClass("is-open")
-              .css("left", "0px");
+              .css("left", "0%");
           }
         });
 
