@@ -1,12 +1,23 @@
 /**
-** Node Add/Edit
+** Entity Form Title Region
+**/
+.node-add-edit h1.page-header {
+    padding: 30px;
+    margin: 0 -15px;
+    background-color: var(--bg-lightest);
+    font-size: 3em;
+    border-color: var(--border-lightest);
+}
+
+/**
+** Entity form nav tab / vertical tabs
 **/
 
 .node-add-edit .tabs-left > .nav-tabs {
     float: none;
-    margin-right: 0;
-    width: auto;
-    padding: 0;
+    margin: 10px 0 0;
+    width: 100%;
+    padding: 0 15px;
 }
 
 .node-add-edit .tabs-left > .nav-tabs > li {
@@ -35,4 +46,13 @@
 .node-add-edit .tabs-left > .nav-tabs > li.active > a:focus {
     color: var(--primary);
     border-bottom: 3px solid var(--primary);
+}
+
+.node-add-edit .tabs-left > .tab-content {
+    border-radius: unset;
+    box-shadow: unset;
+    max-width: 900px;
+    border: 1px solid var(--border-lightest);
+    padding: 1em;
+    margin: 15px;
 }
