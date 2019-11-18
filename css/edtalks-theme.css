@@ -150,6 +150,7 @@ header.navbar .navbar-nav > li > a:active {
     background: white;
     height: 100vh;
     z-index: 1031;
+    box-shadow: 3px 0 5px rgba(0,0,0,0.1);
 }
 #off-canvas-overlay {
     background-color: var(--black);
@@ -161,9 +162,7 @@ header.navbar .navbar-nav > li > a:active {
     top: 0;
     left: 0;
     z-index: 1030;
-    box-shadow: 3px 0 5px rgba(0,0,0,0.1);
     display: none;
-    
 }
 
 @media (min-width: 768px) {
