@@ -1,0 +1,38 @@
+/**
+** Node Add/Edit
+**/
+
+.node-add-edit .tabs-left > .nav-tabs {
+    float: none;
+    margin-right: 0;
+    width: auto;
+    padding: 0;
+}
+
+.node-add-edit .tabs-left > .nav-tabs > li {
+    display: inline-block;
+    margin: 0;
+}
+.node-add-edit .tabs-left > .nav-tabs > li > a {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    margin: 0;
+    box-shadow: unset;
+    background-color: unset;
+}
+.node-add-edit .tabs-left > .nav-tabs > li.active > a {
+    border-color: var(--primary);
+    box-shadow: unset;
+    color: var(--primary);
+}
+.node-add-edit .tabs-left > .nav-tabs > li > a:hover,
+.node-add-edit .tabs-left > .nav-tabs > li > a:focus {
+    color: var(--primary);
+    border-color: var(--primary);  
+}
+.node-add-edit .tabs-left > .nav-tabs > li.active > a:hover,
+.node-add-edit .tabs-left > .nav-tabs > li.active > a:focus {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
