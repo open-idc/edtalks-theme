@@ -39,7 +39,7 @@
           }
         });
         $('#off-canvas-overlay').click(function() {
-          $('#navbar-offcanvas .is-open').removeClass("is-open")
+          $('#navbar-offcanvas.is-open').removeClass("is-open")
           .css("left", "-80%");
           $(this).css("display", "none");
         });
