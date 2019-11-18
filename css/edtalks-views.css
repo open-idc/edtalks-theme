@@ -1,0 +1,90 @@
+/**
+** Grid Layout for Main View Pages
+**/
+.view.maxwidth {
+    max-width: 1240px;
+    margin: 15px auto;
+}
+.view.grid-style-main > .view-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    grid-gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .view.maxwidth {
+        max-width: 1240px;
+        margin: 30px auto;
+    }
+    .view.grid-style-main > .view-content {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 60px 30px;
+    }
+}
+
+.grid-card-item > .card-media {
+    margin-bottom: 10px;
+}
+.grid-card-item > .card-media img {
+    object-fit: cover;
+}
+.grid-card-item > .card-authors ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.grid-card-item > .card-authors ul > li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 300;
+    display: none;
+}
+.grid-card-item > .card-authors ul > li:first-of-type {
+    display: block;
+}
+h3.card-title {
+    font-size: 1.15em;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+h3.card-title a {
+    color: black;
+}
+h3.card-title a:hover,
+h3.card-title a:focus {
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
+/** View Pager **/
+.view > nav.pager-nav {
+    text-align: right;
+    margin-top: 60px;
+}
+.view > nav.pager-nav > .pagination {
+    margin: 0;
+}
+.pagination > li > a,
+.pagination > li > span {
+    border: 1px solid var(--border-light);
+    color: var(--primary);
+}
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover,
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.pagination > li > a:hover, 
+.pagination > li > span:hover, 
+.pagination > li > a:focus, 
+.pagination > li > span:focus {
+    color: var(--primary);
+    background-color: var(--grey-lightest);
+    border-color: var(--border-light);
+}
