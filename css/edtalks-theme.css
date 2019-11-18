@@ -161,7 +161,9 @@ header.navbar .navbar-nav > li > a:active {
     top: 0;
     left: 0;
     z-index: 1030;
+    box-shadow: 3px 0 5px rgba(0,0,0,0.1);
     display: none;
+    
 }
 
 @media (min-width: 768px) {
@@ -176,6 +178,23 @@ header.navbar .navbar-nav > li > a:active {
     #off-canvas-overlay {
         display: none;
     }
+}
+
+/**
+** Offcanvas Region
+**/
+#navbar-offcanvas .navbar-nav {
+    margin: 0;
+}
+#navbar-offcanvas .navbar-nav li > a {
+    color: #666;
+    font-weight: bold;
+    padding: 15px;
+    line-height: 1em;
+}
+#navbar-offcanvas .navbar-nav > li > a:hover, 
+#navbar-offcanvas .navbar-nav > li > a:focus {
+    background-color: var(--grey-lightest);
 }
 
 /**
