@@ -142,7 +142,6 @@ header.navbar .navbar-nav > li > a:active {
     background-color: var(--grey-lightest);
     color: black;
 }
-
 #navbar-offcanvas {
     position: fixed;
     top: 0;
@@ -152,7 +151,6 @@ header.navbar .navbar-nav > li > a:active {
     height: 100vh;
     z-index: 1031;
 }
-
 #off-canvas-overlay {
     background-color: var(--black);
     opacity: 0.25;
@@ -173,6 +171,10 @@ header.navbar .navbar-nav > li > a:active {
     header.navbar > .container-fluid > .navbar-collapse {
         grid-column: 9 / -1;
         justify-self: end;
+    }
+    #navbar-offcanvas,
+    #off-canvas-overlay {
+        display: none;
     }
 }
 

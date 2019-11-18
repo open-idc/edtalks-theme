@@ -30,10 +30,12 @@
             $(targetEl)
               .removeClass("is-open")
               .css("left", "-80%");
+              $("#off-canvas-overlay").css("display", "none");
           } else {
             $(targetEl)
               .addClass("is-open")
               .css("left", "0%");
+            $("#off-canvas-overlay").css("display", "block");
           }
         });
 
