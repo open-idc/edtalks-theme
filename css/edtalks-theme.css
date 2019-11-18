@@ -155,7 +155,7 @@ header.navbar .navbar-nav > li > a:active {
 .region.region-top-bar {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: flex-start;
+    justify-content: stretch;
     grid-gap: 30px;
     max-width: 1240px;
     margin: auto;
@@ -171,6 +171,21 @@ header.navbar .navbar-nav > li > a:active {
 }
 .region-top-bar > .views-exposed-form {
     align-self: center;
+    grid-column: span 2;
+    display: none;
+}
+#block-expandviewsexposedfiltersbutton {
+    text-align: right;
+}
+
+@media (min-width: 768px) {
+    .region.region-top-bar {
+        justify-content: flex-start;
+    }
+    .region-top-bar > .views-exposed-form {
+        display: block;
+        grid-column: unset;
+    }
 }
 
 /**
