@@ -25,10 +25,9 @@
         $('button.navbar-toggle[data-toggle="offcanvas"]').click(function() {
           var targetEl = $(this).attr("data-target");
           if ($(targetEl).hasClass("is-open")) {
-            console.log("open already");
             $(targetEl)
               .removeClass("is-open")
-              .css("left", "-80%");
+              .css("left", "-82%");
               $("#off-canvas-overlay").css("display", "none");
           } else {
             $(targetEl)
