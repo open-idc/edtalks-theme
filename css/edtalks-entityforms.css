@@ -13,7 +13,7 @@
 ** Entity form nav tab / vertical tabs
 **/
 
-.node-add-edit .tabs-left > .nav-tabs {
+/* .node-add-edit .tabs-left > .nav-tabs {
     float: none;
     margin: 10px 0 0;
     width: 100%;
@@ -23,7 +23,7 @@
 .node-add-edit .tabs-left > .nav-tabs > li {
     display: inline-block;
     margin: 0;
-}
+} */
 .node-add-edit .tabs-left > .nav-tabs > li > a {
     border-radius: 0;
     border: 0;
