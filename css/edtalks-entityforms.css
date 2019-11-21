@@ -15,9 +15,9 @@
 
 .node-add-edit .tabs-left > .nav-tabs {
     float: none;
-    margin: 10px 0 0;
+    margin: 0;
     width: 100%;
-    padding: 0 15px;
+    padding: 0;
 }
 
 .node-add-edit .tabs-left > .nav-tabs > li {
@@ -51,8 +51,7 @@
 .node-add-edit .tabs-left > .tab-content {
     border-radius: unset;
     box-shadow: unset;
-    max-width: 900px;
     border: 1px solid var(--border-lightest);
     padding: 1em;
-    margin: 15px;
+    margin: 15px 0;
 }
