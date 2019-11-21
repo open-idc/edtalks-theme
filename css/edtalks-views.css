@@ -25,9 +25,7 @@
 .grid-card-item > .card-media {
     margin-bottom: 10px;
 }
-.grid-card-item > .card-media img {
-    object-fit: cover;
-}
+.grid-card-item > .card-media img {}
 .grid-card-item > .card-authors ul {
     padding: 0;
     margin: 0;

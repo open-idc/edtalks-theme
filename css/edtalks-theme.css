@@ -102,6 +102,14 @@ fieldset[disabled] .btn-primary.focus {
 
 
 /**
+** Alert section
+**/
+.alert {
+    margin: 0 -15px;
+    border-radius: 0;
+}
+
+/**
 ** Site Header
 **/
 header.navbar {
