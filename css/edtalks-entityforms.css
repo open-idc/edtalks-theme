@@ -4,7 +4,7 @@
 .node-add-edit h1.page-header {
     padding: 30px;
     margin: 0 -15px;
-    background-color: var(--bg-lightest);
+    background-color: var(--primary-10);
     font-size: 3em;
     border-color: var(--border-lightest);
 }
@@ -64,6 +64,21 @@
 ** Panels
 **/
 
+/** Panel help/description **/
+.panel-body > p.help-block {
+    color: #212121;
+    font-size: 14px;
+    margin: 0 0 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-lightest);
+}
+.panel-body > p.help-block > span.panel-help-header {
+    display: block;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
 /** Unpanel a panel **/
 .unpanel .panel {
     border: unset;
@@ -111,6 +126,7 @@
     margin-right: 15px;
     font-weight: 100;
     font-size: 14px;
+    display: inline-block;
 }
 .form-sidebar > .panel > .panel-heading > a.panel-title.collapsed:before {
     -webkit-transform: rotate(90deg);
@@ -130,3 +146,4 @@
 .form-sidebar > .panel > .panel-heading > a.panel-title:focus {
     background-color: var(--primary-10);
 }
+

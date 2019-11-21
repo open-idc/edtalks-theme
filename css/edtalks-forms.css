@@ -57,3 +57,15 @@ select.form-control:focus {
   background-image: unset;
   box-shadow: inset 0 -2px 0 var(--primary);
 }
+
+input[type="checkbox"]:checked:after,
+.checkbox input[type="checkbox"]:checked:after,
+.checkbox-inline input[type="checkbox"]:checked:after {
+  background-color: var(--primary);
+  border-color: var(--primary-dark);
+}
+
+label {
+  font-weight: 500;
+  color: #212121;
+}
