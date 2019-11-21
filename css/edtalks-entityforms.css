@@ -59,6 +59,11 @@
     margin: 15px 0;
 }
 
+
+/**
+** Panels
+**/
+
 /** Unpanel a panel **/
 .unpanel .panel {
     border: unset;
@@ -71,4 +76,31 @@
 }
 .unpanel .panel > .panel-body {
     padding: 0;
+}
+
+/** Sidebar panels **/
+.form-sidebar > .panel {
+    box-shadow: unset;
+    border-left: 1px solid var(--border-lightest);
+    border-radius: unset;
+    margin-bottom: 0;
+    margin-right: -15px;
+}
+.form-sidebar > .panel > .panel-heading {
+    color: #212121;
+    background-color: unset;
+    border-bottom: 1px solid var(--border-lightest);
+    border-top: 1px solid var(--border-lightest);
+    font-weight: bold;
+    border-radius: unset;
+    padding: 0;
+}
+.form-sidebar > .panel > .panel-heading > a.panel-title {
+    font-size: 18px;
+    padding: 15px;
+    margin: 0;
+}
+.form-sidebar > .panel > .panel-body {
+    padding: 30px;
+    background-color: #fbfbfb;
 }
