@@ -104,3 +104,29 @@
     padding: 30px;
     background-color: #fbfbfb;
 }
+.form-sidebar > .panel > .panel-heading > a.panel-title:before {
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    color: #888;
+    margin-right: 15px;
+    font-weight: 100;
+    font-size: 14px;
+}
+.form-sidebar > .panel > .panel-heading > a.panel-title.collapsed:before {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.form-sidebar > .panel:first-of-type > .panel-heading {
+    border-top: unset;
+}
+.form-sidebar > .panel > .panel-heading > a.panel-title.collapsed {
+    border-bottom: unset;
+}
+
+.form-sidebar > .panel > .panel-heading > a.panel-title:hover,
+.form-sidebar > .panel > .panel-heading > a.panel-title:focus {
+    background-color: var(--primary-10);
+}
