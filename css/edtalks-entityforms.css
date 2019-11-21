@@ -13,6 +13,9 @@
 ** Entity form nav tab / vertical tabs
 **/
 
+.node-add-edit .tabs-left {
+    margin: 10px 15px 15px;
+}
 .node-add-edit .tabs-left > .nav-tabs {
     float: none;
     margin: 0;
@@ -54,4 +57,18 @@
     border: 1px solid var(--border-lightest);
     padding: 1em;
     margin: 15px 0;
+}
+
+/** Unpanel a panel **/
+.unpanel .panel {
+    border: unset;
+    border-radius: unset;
+    box-shadow: unset;
+    background-color: unset;
+}
+.unpanel .panel > .panel-heading {
+    display: none;
+}
+.unpanel .panel > .panel-body {
+    padding: 0;
 }
