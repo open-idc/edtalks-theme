@@ -100,7 +100,7 @@ fieldset[disabled] .btn-primary.focus {
     border-radius: 0;
 }
 .alert-danger {
-    background-color: var(--red-dark);
+    background-color: var(--red);
 }
 
 
