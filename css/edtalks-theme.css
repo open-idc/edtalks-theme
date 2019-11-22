@@ -106,6 +106,19 @@ fieldset[disabled] .btn-primary.focus {
     color: black;
 }
 
+.btn-danger {
+    background-color: var(--red);
+}
+.btn-danger:hover,
+.btn-danger:focus {
+    background-color: var(--red-dark);
+}
+.btn-danger:active {
+    background-color: var(--red-dark);
+    background-image: radial-gradient(circle, var(--red-dark) 10%, var(--red-light) 11%);
+    box-shadow: unset;
+}
+
 
 /**
 ** Alert section

@@ -119,6 +119,20 @@ div.autocomplete-deluxe-throbber {
 }
 
 /**
+** Image and File Field
+**/
+.file {
+  border: 1px solid var(--border-light);
+  margin: 0 0 10px;
+}
+.file > span {
+  background: unset;
+  color: #666;
+  border: 0;
+}
+
+
+/**
 ** Alerts
 **/
 .form-item--error-message.alert {
