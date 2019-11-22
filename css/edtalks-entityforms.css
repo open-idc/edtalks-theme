@@ -50,7 +50,6 @@
     color: var(--primary);
     border-bottom: 3px solid var(--primary);
 }
-
 .node-add-edit .tabs-left > .tab-content {
     border-radius: unset;
     box-shadow: unset;
@@ -66,7 +65,7 @@
 
 /** Panel help/description **/
 .panel-body > p.help-block {
-    color: #212121;
+    color: black;
     font-size: 14px;
     margin: 0 0 30px;
     padding-bottom: 30px;
@@ -117,12 +116,12 @@
 }
 .form-sidebar > .panel > .panel-body {
     padding: 30px;
-    background-color: #fbfbfb;
+    background-color: var(--grey-light);
 }
 .form-sidebar > .panel > .panel-heading > a.panel-title:before {
     content: "\e080";
     font-family: 'Glyphicons Halflings';
-    color: #888;
+    color: #666;
     margin-right: 15px;
     font-weight: 100;
     font-size: 14px;

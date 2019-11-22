@@ -16,36 +16,27 @@
 :root {
     --primary: #009688;
     --primary-dark: #1c7e74;
+    --primary-darkest: #114a44;
     --primary-light: #3FD8C9;
     --primary-10: rgba(0, 150, 136, 0.1);
+
+    --disabled: slategrey;
     
-    --secondary: #429ebd;
-    --secondary-dark: #2e6f84;
-    --secondary-light: #7bbbd1;
-
-    --white: #ffffff;
-    --bg-lightest: #f8f8f8;
-    --bg-mid: #f5f5f5;
-    --bg-highlight: #ebebeb;
-    --bg-highlight-overlay: #dcdcdc;
-
     --red: #bd4242;
     --red-dark: #842e2e;
     --red-light: #d17b7b;
 
-    --greyblue: #698796;
-    --greyblue-dark: #495f69;
-    --greyblue-light: #96abb6;
-
-    --black: #000000;
-    --text-mid: #666666;
-    --text-light: #AAAAAA;
-
-
     --grey-lightest: #f3f3f3;
+    --grey-light: #fbfbfb;
 
     --border-lightest: #ebebeb;
     --border-light: #dcdcdc;
+    --border-dark: #aaaaaa;
+    --border-darkest: #232323;
+
+    --shadow-low: 0 2px 5px rgba(0, 0, 0, 0.10);
+    --shadow-mid: 0 5px 10px rgba(0, 0, 0, 0.15);
+    --shadow-high: 0 5px 15px rgba(0, 0, 0, 0.20);
 }
 
 /**
@@ -97,7 +88,7 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-    background-color: slategrey;
+    background-color:var(--disabled);
 }
 
 
@@ -113,7 +104,7 @@ fieldset[disabled] .btn-primary.focus {
 ** Site Header
 **/
 header.navbar {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-mid);
     position: sticky;
     top: 0;
     margin: 0;
@@ -161,7 +152,7 @@ header.navbar .navbar-nav > li > a:active {
     box-shadow: 3px 0 5px rgba(0,0,0,0.1);
 }
 #off-canvas-overlay {
-    background-color: var(--black);
+    background-color: black;
     opacity: 0.25;
     width: 100%;
     height: 100%;

@@ -1,3 +1,8 @@
+label {
+  font-weight: 500;
+  color: var(--primary-darkest);
+}
+
 .form-inline > .form-item {
   margin-right: 10px;
 }
@@ -18,7 +23,7 @@ input[type=number],
   border-radius: 4px;
   padding: 0px 10px;
   box-shadow: unset;
-  border: 1px solid var(--border-lightest);
+  border: 1px solid var(--border-dark);
 }
 
 textarea:focus, 
@@ -45,7 +50,7 @@ select.form-control {
   border-radius: 4px;
   padding: 10px 3em 10px 10px;
   box-shadow: unset;
-  border: 1px solid var(--border-lightest);
+  border: 1px solid var(--border-dark);
 }
 .select-wrapper:after {
   padding-right: 0;
@@ -65,7 +70,36 @@ input[type="checkbox"]:checked:after,
   border-color: var(--primary-dark);
 }
 
-label {
-  font-weight: 500;
-  color: #212121;
+div.autocomplete-deluxe-multiple {
+  background: white;
+  border-color: var(--border-dark);
+  padding: 10px 15px;
+} 
+
+div.autocomplete-deluxe-container input.autocomplete-deluxe-form {
+  border: none;
+  background: unset;
+  padding: 0;
+  margin: 0;
+  border-radius: unset;
+  font-size: 18px;
+}
+div.autocomplete-deluxe-container input.autocomplete-deluxe-form:focus {
+  box-shadow: unset;
+  border: unset;
+}
+.autocomplete-deluxe-item {
+  background-color: var(--primary-10);
+  color: black;
+  font-size: 18px;
+  padding: 5px 25px 5px 10px;
+  line-height: 1.4em;
+  box-shadow: unset;
+  border-radius: unset;
+  margin: 0 15px 0 0;
+  vertical-align: middle;
+}
+.autocomplete-deluxe-item-delete {
+  right: 5px;
+  top: 11px;
 }
