@@ -91,6 +91,21 @@ fieldset[disabled] .btn-primary.focus {
     background-color:var(--disabled);
 }
 
+.btn-success {
+    background-color: var(--primary);
+}
+.btn-success:hover,
+.btn-success:focus {
+    background-color: var(--primary-light);
+    color: black;
+}
+.btn-success:active {
+    background-color: var(--primary-light);
+    background-image: radial-gradient(circle, var(--primary-light) 10%, var(--primary-dark) 11%);
+    box-shadow: unset;
+    color: black;
+}
+
 
 /**
 ** Alert section

@@ -145,4 +145,22 @@
 .form-sidebar > .panel > .panel-heading > a.panel-title:focus {
     background-color: var(--primary-10);
 }
+.form-sidebar > .panel:last-of-type {
+    border-bottom: 1px solid var(--border-lightest);
+}
 
+
+/**
+** Entity form action buttons
+**/
+form.node-form > #form-actions {
+    padding: 15px;
+}
+form.node-form > #form-actions > button {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    line-height: unset;
+    height: unset;
+    border-radius: 0;
+}
