@@ -99,6 +99,10 @@ fieldset[disabled] .btn-primary.focus {
     margin: 0 -15px;
     border-radius: 0;
 }
+.alert-danger {
+    background-color: var(--red-dark);
+}
+
 
 /**
 ** Site Header

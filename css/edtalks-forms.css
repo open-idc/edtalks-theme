@@ -117,3 +117,10 @@ div.autocomplete-deluxe-throbber {
   right: 15px;
   top: 18px;
 }
+
+/**
+** Alerts
+**/
+.form-item--error-message.alert {
+  margin: 0;
+}
