@@ -153,10 +153,10 @@
 /**
 ** Entity form action buttons
 **/
-form.node-form > #form-actions {
+form.node-form > #edit-actions {
     padding: 15px;
 }
-form.node-form > #form-actions > button {
+form.node-form > #edit-actions > button {
     font-size: 16px;
     text-transform: uppercase;
     padding: 10px 20px;
