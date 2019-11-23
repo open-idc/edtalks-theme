@@ -41,11 +41,6 @@
           $(this).css("display", "none");
         });
 
-        // set default H5P Content Type
-        $("#h5peditor-library").each(function(){
-          //.val("H5P.InteractiveVideo 1.21");
-          console.log($(this);
-        });
 
       }
     }
