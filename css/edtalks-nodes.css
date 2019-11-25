@@ -46,6 +46,20 @@ body.path-node .main-container {
     background-color: var(--primary-darkest);
 }
 
+/** Field: Tags **/
+.field.field--name-field-tags .field--item {
+    display: inline-block;
+    margin: 0 3px 3px 0;
+}
+.field--name-field-tags a {
+    padding: 8px 12px;
+    background-color: var(--primary-10);
+    color: black;
+    line-height: 1em;
+    border-radius: 4px;
+}
+
+
 /**
 ** Node page elements
 **/
@@ -168,3 +182,4 @@ body.path-node .main-container {
     color: var(--primary);
     text-decoration: none;
 }
+
