@@ -17,6 +17,7 @@ body.path-node .main-container {
 **/
 .node--type-talk.node--view-mode-full {
     padding-right: 0px;
+    margin-bottom: 50px;
 }
 
 @media (min-width: 1920px) {
@@ -68,13 +69,13 @@ body.path-node .main-container {
 
 /** talk title region **/
 .talk-title-region {
-    padding: 30px 15px;
+    padding: 15px;
     background-color: var(--grey-lightest);
     color: black;
 }
 .talk-title-actions {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
     margin-bottom: 15px;
 }
 .talk-title-actions .stat-count {
@@ -128,6 +129,16 @@ body.path-node .main-container {
     font-size: 1.6em;
     margin: 0;
     font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .talk-title-region {
+        padding: 30px 15px;
+    }
+    .talk-title-actions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
