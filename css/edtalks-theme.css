@@ -198,10 +198,10 @@ header.navbar .navbar-nav > li > a:active {
 
 @media (min-width: 768px) {
     header.navbar > .container-fluid > .navbar-header {
-        grid-column: 1 / 9;
+        grid-column: 1 / 5;
     }
     header.navbar > .container-fluid > .navbar-collapse {
-        grid-column: 9 / -1;
+        grid-column: 5 / -1;
         justify-self: end;
     }
     #navbar-offcanvas,
@@ -209,6 +209,7 @@ header.navbar .navbar-nav > li > a:active {
         display: none;
     }
 }
+
 
 /**
 ** Offcanvas Region
