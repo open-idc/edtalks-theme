@@ -143,4 +143,28 @@ body.path-node .main-container {
 .presenter-name-title h3 a:hover,
 .presenter-name-title h3 a:focus {
     color: var(--primary);
+    text-decoration: none;
+}
+
+/** talk event info region **/
+.event-info-region-entry {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+.event-info-region-entry .event-info-details {
+    padding-left: 25px;
+    padding-top: 15px;
+}
+.event-info-details h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+.event-info-details h3 a {
+    color: black;
+}
+.event-info-details h3 a:hover,
+.event-info-details h3 a:focus {
+    color: var(--primary);
+    text-decoration: none;
 }
