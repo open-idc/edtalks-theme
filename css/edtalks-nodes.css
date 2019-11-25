@@ -26,6 +26,25 @@ body.path-node .main-container {
 }
 
 /**
+** Node fields
+**/
+.node.node--view-mode-full > .field.field--label-above {
+    margin-top: 30px;
+    max-width: 700px;
+}
+.field--label-above > .field--label {
+    font-weight: 400;
+    color: var(--primary-darkest);
+}
+.field--label-above > .field--label::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-darkest);
+}
+
+/**
 ** Node page elements
 **/
 
@@ -78,17 +97,17 @@ body.path-node .main-container {
 .talk-subtitle-top a {
     color: var(--grey-dark);
 }
-.talk-subtitle-top > h1.page-title {
-    font-size: 24px;
-    margin: 0;
-    font-weight: 600;
-}
 .talk-subtitle-top > a:before {
     content: "@";
     margin: 0 0px 0 10px;
 }
-.talk-subtitle-top > a:hover,
-.talk-subtitle-top > a:focus {
+.talk-subtitle-top a:hover,
+.talk-subtitle-top a:focus {
     color: var(--primary);
     text-decoration: none;
+}
+.talk-title-details > h1.page-title {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
 }
