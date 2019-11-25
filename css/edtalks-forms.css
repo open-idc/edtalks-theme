@@ -127,7 +127,7 @@ div.autocomplete-deluxe-throbber {
 }
 .file > span {
   background: unset;
-  color: #666;
+  color: var(--grey-dark);
   border: 0;
 }
 
@@ -143,5 +143,5 @@ div.autocomplete-deluxe-throbber {
 ** Help Block
 **/
 .help-block {
-  color: #666;
+  color: var(--grey-dark);
 }

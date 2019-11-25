@@ -28,6 +28,7 @@
 
     --grey-lightest: #f3f3f3;
     --grey-light: #fbfbfb;
+    --grey-dark: #666;
 
     --border-lightest: #ebebeb;
     --border-light: #dcdcdc;
@@ -218,7 +219,7 @@ header.navbar .navbar-nav > li > a:active {
     margin: 0;
 }
 #navbar-offcanvas .navbar-nav li > a {
-    color: #666;
+    color: var(--grey-dark);
     font-weight: bold;
     padding: 15px;
     line-height: 1em;

@@ -31,7 +31,7 @@ body.path-node .main-container {
 
 /** talk title region **/
 .talk-title-region {
-    padding: 15px;
+    padding: 30px 15px;
     background-color: var(--grey-lightest);
     color: black;
 }
@@ -48,13 +48,13 @@ body.path-node .main-container {
 }
 .talk-title-actions .stat-desc {
     font-size: .9em;
-    color: #666;
+    color: var(--grey-dark);
 }
 .talk-title-actions .talk-actions {
     text-align: right;
 }
 .talk-title-actions .talk-actions > a {
-    color: #666;
+    color: var(--grey-dark);
     font-size: 0.9em;
     display: inline-block;
     text-align: center;
@@ -74,4 +74,21 @@ body.path-node .main-container {
 .talk-actions > a:hover > span.glyphicon,
 .talk-actions > a:focus > span.glyphicon {
     color: var(--primary);
+}
+.talk-subtitle-top a {
+    color: var(--grey-dark);
+}
+.talk-subtitle-top > h1.page-title {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+}
+.talk-subtitle-top > a:before {
+    content: "@";
+    margin: 0 0px 0 10px;
+}
+.talk-subtitle-top > a:hover,
+.talk-subtitle-top > a:focus {
+    color: var(--primary);
+    text-decoration: none;
 }
