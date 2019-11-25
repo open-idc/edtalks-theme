@@ -36,7 +36,7 @@ body.path-node .main-container {
     font-weight: 400;
     color: var(--primary-darkest);
 }
-.field--label-above > .field--label::before {
+.field--label-above > .field--label::after {
     content: '';
     display: block;
     width: 30px;
@@ -97,7 +97,7 @@ body.path-node .main-container {
 .talk-subtitle-top a {
     color: var(--grey-dark);
 }
-.talk-subtitle-top > a:before {
+.talk-subtitle-top > a::before {
     content: "@";
     margin: 0 0px 0 10px;
 }
