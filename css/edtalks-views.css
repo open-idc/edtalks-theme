@@ -37,6 +37,7 @@
 .split-card-item.views-row {
     display: grid;
     grid-template-columns: 100px auto;
+    margin-bottom: 15px;
 }
 .split-card-details {
     padding-left: 10px;
