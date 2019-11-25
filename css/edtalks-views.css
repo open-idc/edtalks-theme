@@ -36,11 +36,11 @@
 **/
 .split-card-item.views-row {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 33.33% auto;
     margin-bottom: 15px;
 }
 .split-card-details {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 
