@@ -1,0 +1,15 @@
+/**
+** Node Page Layout
+**/
+body.path-node .main-container {
+    max-width: 1800px;
+    margin-top: 30px;
+}
+
+
+/**
+** Talk Node
+**/
+.node--type-talk.node--view-mode-full {
+    padding-right: 50px;
+}
