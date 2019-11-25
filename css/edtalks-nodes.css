@@ -134,6 +134,12 @@ body.path-node .main-container {
 .presenter-name-title h3 {
     margin: 0;
     font-size: 16px;
+}
+.presenter-name-title h3 a {
     font-weight: bold;
     color: black;
+}
+.presenter-name-title h3 a:hover,
+.presenter-name-title h3 a:focus {
+    color: var(--primary);
 }
