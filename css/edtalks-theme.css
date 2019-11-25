@@ -293,10 +293,14 @@ header.navbar .navbar-nav > li > a:active {
 /**
 ** Sidebar block layouts
 **/
+.region-sidebar-second  {
+    background-color: var(--grey-light);
+    padding: 15px;
+    margin: 0 -15px;
+}
 .region-sidebar-second > .block {
     margin-bottom: 30px;
 }
-
 .region-sidebar-second h2.block-title {
     margin: 0 0 15px;
     font-weight: 600;
@@ -312,4 +316,11 @@ header.navbar .navbar-nav > li > a:active {
     width: 30px;
     height: 2px;
     background-color: var(--primary-darkest);
+}
+@media (min-width: 768px) {
+    .region-sidebar-second  {
+        background-color: unset;
+        padding: 0;
+        margin: 0;
+    }
 }
