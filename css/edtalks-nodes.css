@@ -33,8 +33,9 @@ body.path-node .main-container {
     max-width: 700px;
 }
 .field--label-above > .field--label {
-    font-weight: 400;
+    font-weight: 600;
     color: var(--primary-darkest);
+    margin-bottom: 5px;
 }
 .field--label-above > .field--label::after {
     content: '';
@@ -110,4 +111,29 @@ body.path-node .main-container {
     font-size: 24px;
     margin: 0;
     font-weight: 600;
+}
+
+
+/** talk presenters region **/
+.presenter-entry {
+    margin-bottom: 15px;
+}
+.presenter-entry > .presenters-block-top {
+    display: grid;
+    grid-template-columns: 75px auto;
+    margin-bottom: 5px;
+}
+.presenters-block-top .presenter-photo {
+    width: 50px;
+    height: 50px;
+    background-color: #CCC;
+}
+.presenters-block-top .presenter-name-title {
+    align-self: center;
+}
+.presenter-name-title h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
 }

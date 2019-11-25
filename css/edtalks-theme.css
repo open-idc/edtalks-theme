@@ -120,6 +120,15 @@ fieldset[disabled] .btn-primary.focus {
     box-shadow: unset;
 }
 
+a.soft-link {
+    color: rgba(0,0,0,0.35);
+}
+a.soft-link:hover,
+a.soft-link:focus {
+    color: var(--primary);
+    text-decoration: none;
+}
+
 
 /**
 ** Alert section
