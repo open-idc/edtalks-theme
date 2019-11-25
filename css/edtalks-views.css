@@ -22,28 +22,60 @@
     }
 }
 
+/**
+** Grid Card Layout
+**/
 .grid-card-item > .card-media {
     margin-bottom: 10px;
 }
 .grid-card-item > .card-media img {}
-.grid-card-item > .card-authors ul {
+
+
+/**
+** Split Card Layout
+**/
+.split-card-item.views-row {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+.split-card-details {
+    padding-left: 10px;
+}
+
+
+/** 
+** Card Presenters/Profile Region
+**/
+.card-authors ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.grid-card-item > .card-authors ul > li {
+.card-authors ul > li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 300;
     display: none;
 }
-.grid-card-item > .card-authors ul > li:first-of-type {
+.card-authors ul > li:first-of-type {
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 135px;
 }
+@media (min-width: 768px) {
+    .card-authors ul > li:first-of-type {
+        white-space: unset;
+        overflow: unset;
+        text-overflow: unset;
+        max-width: unset;
+    }
+}
+
+/**
+** Card title region
+**/
 h3.card-title {
     font-size: 1.15em;
     margin: 0;
@@ -57,15 +89,6 @@ h3.card-title a:hover,
 h3.card-title a:focus {
     text-decoration: none;
     color: var(--primary-dark);
-}
-
-@media (min-width: 768px) {
-    .grid-card-item > .card-authors ul > li:first-of-type {
-        white-space: unset;
-        overflow: unset;
-        text-overflow: unset;
-        max-width: unset;
-    }
 }
 
 

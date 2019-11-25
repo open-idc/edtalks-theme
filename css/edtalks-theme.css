@@ -283,3 +283,28 @@ header.navbar .navbar-nav > li > a:active {
         display: block !important;
     }
 }
+
+
+/**
+** Sidebar block layouts
+**/
+.region-sidebar-second > .block {
+    margin-bottom: 30px;
+}
+
+.region-sidebar-second h2.block-title {
+    margin: 0 0 15px;
+    font-weight: 600;
+    color: var(--primary-darkest);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.846;
+}
+.region-sidebar-second h2.block-title:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-darkest);
+}
