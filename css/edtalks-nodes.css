@@ -35,7 +35,8 @@ body.path-node .main-container {
 .field--label-above > .field--label {
     font-weight: 600;
     color: var(--primary-darkest);
-    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 .field--label-above > .field--label::after {
     content: '';
@@ -116,7 +117,7 @@ body.path-node .main-container {
 
 /** talk presenters region **/
 .presenter-entry {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .presenter-entry > .presenters-block-top {
     display: grid;
