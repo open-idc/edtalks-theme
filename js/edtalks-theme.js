@@ -41,6 +41,23 @@
           $(this).css("display", "none");
         });
 
+        // better looking event date output
+        $('.event-compare-dates').each(function() {
+          var eventYear = $('time:first-of-type').text().split(",")[1];
+
+          var startDate = $('time:first-of-type');
+          var endDate = $('time:last-of-type');
+          console.log(eventYear);
+
+          // compare start and end to see if they match
+          if ( $(startDate).text() === $(endDate).text() ) {
+            $(endDate).css('display', 'none');
+          } else {
+            $(startDate).text() = $(startDate).text().split(',')[0] + ' - ';
+            $(endDate).text() = $(endDate).text().split(' ')[1] + ', ' + eventYear;
+           }
+        });
+
 
       }
     }
