@@ -47,7 +47,7 @@
 
           var startDate = $('time:first-of-type');
           var endDate = $('time:last-of-type');
-          console.log(eventYear);
+//          console.log(eventYear);
 
           // compare start and end to see if they match
           if ( $(startDate).text() === $(endDate).text() ) {
