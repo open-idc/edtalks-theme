@@ -43,19 +43,24 @@
 
         // better looking event date output
         $('.event-compare-dates').each(function() {
-          //var eventYear = $('time:first-of-type').text().split(",")[1];
-
+          
           var startDate = $('time:first-of-type');
           var endDate = $('time:last-of-type');
-//          console.log(eventYear);
+          var splitStartText = $(startDate).text().split(' ');
+          var splitEndText = $(endDate).text().split(' ');
+          var newDateText;
+
+          console.log(splitStartText);
 
           // compare start and end to see if they match
           if ( $(startDate).text() === $(endDate).text() ) {
             $(endDate).css('display', 'none');
+          } else if ( splitStartText[0] !== splitEndText[0] ) {
+            newDateText = splitStartText[0] +  ' ' + splitStartText[1] + ' - ' + splitEndText[0] + ' ' + splitEndText[0];
+            $(startDate).text(newDateText);
+            $(endDate).css('display', 'none');
           } else {
-            var splitStartText = $(startDate).text().split(',');
-            var splitEndText = $(endDate).text().split(' ');
-            var newDateText = splitStartText[0] + ' - ' + splitEndText[1] + splitStartText[1];
+            newDateText = splitStartText[0] + ' - ' + splitEndText[1] + splitStartText[1];
             $(startDate).text(newDateText);
             $(endDate).css('display', 'none');
            }
