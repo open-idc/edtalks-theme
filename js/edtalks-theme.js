@@ -56,13 +56,15 @@
           if ( $(startDate).text() === $(endDate).text() ) {
             $(endDate).css('display', 'none');
           } else if ( splitStartText[0] !== splitEndText[0] ) {
-            newDateText = splitStartText[0] +  ' ' + splitStartText[1] + ' - ' + splitEndText[0] + ' ' + splitEndText[0];
+            newDateText = splitStartText[0] +  ' ' + splitStartText[1] + ' - ' + splitEndText[0] + ' ' + splitEndText[1] + ', ' + splitEndText[2];
             $(startDate).text(newDateText);
             $(endDate).css('display', 'none');
-          } else {
-            newDateText = splitStartText[0] + ' - ' + splitEndText[1] + splitStartText[1];
+          } else if ( (splitStartText[0] === splitEndText[0]) && (splitStartText[1] !== splitEndText[1]) ) {
+            newDateText = splitStartText[0] + ' ' + splitStartText[1] + ' - ' + splitEndText[1] + ', ' + splitEndText[2];
             $(startDate).text(newDateText);
             $(endDate).css('display', 'none');
+           } else {
+             $(startDate).append(' - ');
            }
         });
 
