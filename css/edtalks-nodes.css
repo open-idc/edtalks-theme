@@ -206,9 +206,6 @@ body.path-node .main-container {
     color: var(--primary);
     text-decoration: none;
 }
-.event-info-detail .event-location {
-    margin-top: 5px;
-}
 .event-location .loc-organization {
     display: block;
 }

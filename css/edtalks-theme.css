@@ -139,8 +139,12 @@ a.soft-link:focus {
 ** Alert section
 **/
 .alert {
-    margin: 0 -15px;
-    border-radius: 0;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-high);
+    margin: 0;
 }
 .alert-danger {
     background-color: var(--red);
