@@ -37,7 +37,7 @@
           }
         });
         $('#off-canvas-overlay').click(function() {
-          $('#navbar-offcanvas.is-open').removeClass("is-open").css("left", "-80%");
+          $('#navbar-offcanvas.is-open').removeClass("is-open").css("left", "-82%");
           $(this).css("display", "none");
         });
 
