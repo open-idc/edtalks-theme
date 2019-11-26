@@ -50,8 +50,6 @@
           var splitEndText = $(endDate).text().split(' ');
           var newDateText;
 
-          console.log(splitStartText);
-
           // compare start and end to see if they match
           if ( $(startDate).text() === $(endDate).text() ) {
             $(endDate).css('display', 'none');
@@ -64,7 +62,7 @@
             $(startDate).text(newDateText);
             $(endDate).css('display', 'none');
            } else {
-             $(startDate).append(' - ');
+             $(startDate).once().append(' - ');
            }
         });
 
