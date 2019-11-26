@@ -48,6 +48,12 @@ body.path-node .main-container {
     height: 2px;
     background-color: var(--primary-darkest);
 }
+@media (min-width: 768px) {
+    .node.node--view-mode-full > .field.field--label-above {
+        margin-top: 60px;
+        max-width: 700px;
+    }
+}
 
 /** Field: Tags **/
 .field.field--name-field-tags .field--item {
@@ -61,6 +67,7 @@ body.path-node .main-container {
     line-height: 1em;
     border-radius: 4px;
 }
+
 
 
 /**
@@ -133,7 +140,7 @@ body.path-node .main-container {
 
 @media (min-width: 768px) {
     .talk-title-region {
-        padding: 30px 15px;
+        padding: 30px;
     }
     .talk-title-actions {
         display: grid;
