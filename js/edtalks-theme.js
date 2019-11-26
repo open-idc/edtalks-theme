@@ -55,7 +55,7 @@
           // compare start and end to see if they match
           if ( $(startDate).text() === $(endDate).text() ) {
             $(endDate).css('display', 'none');
-          } else if ( splitStartText[0] !== splitEndText[0] ) {
+          } else if ( (splitStartText[0] !== splitEndText[0]) && (splitStartText[3] === splitEndText[3]) ) {
             newDateText = splitStartText[0] +  ' ' + splitStartText[1] + ' - ' + splitEndText[0] + ' ' + splitEndText[1] + ', ' + splitEndText[2];
             $(startDate).text(newDateText);
             $(endDate).css('display', 'none');
