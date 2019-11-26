@@ -55,8 +55,9 @@
           } else {
             var splitStartText = $(startDate).text().split(',');
             var splitEndText = $(endDate).text().split(' ');
-            var newDateText = splitStartText[0] + ' - ' + splitEndText[1] + ', ' + splitStartText[1];
+            var newDateText = splitStartText[0] + ' - ' + splitEndText[1] + splitStartText[1];
             $(startDate).text(newDateText);
+            $(endDate).css('display', 'none');
            }
         });
 
