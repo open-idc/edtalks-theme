@@ -10,6 +10,9 @@ body.path-node .main-container {
         max-width: 1800px;
         margin-top: 30px;
     }
+    body.path-node.page-node-type-profile .main-container {
+        margin-top: 0;
+    }
     body.path-node .main-container.node-add-edit {
         max-width: unset;
         margin-top: 0;
@@ -28,6 +31,24 @@ body.path-node .main-container {
     .node--type-talk.node--view-mode-full {
         padding-right: 50px;
     }
+}
+
+/**
+** Profile Node
+**/
+.node--type-profile.node--view-mode-full {
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: 30% auto;
+    grid-gap: 0 50px;
+}
+.profile-col-1 {
+    background-color: var(--grey-lightest);
+    padding: 30px;
+    grid-column: 1;
+}
+.profile-col-2 {
+    margin-top: 30px;
 }
 
 /**
@@ -213,3 +234,6 @@ body.path-node .main-container {
 .event-location .loc-administrative-area {
     padding-left: 5px;
 }
+
+/** Profile: details region **/
+
