@@ -125,6 +125,11 @@ fieldset[disabled] .btn-primary.focus {
     box-shadow: unset;
 }
 
+.btn.edit-node {
+    line-height: 1.846;
+    border-radius: unset;
+}
+
 a.soft-link {
     color: rgba(0,0,0,0.35);
 }

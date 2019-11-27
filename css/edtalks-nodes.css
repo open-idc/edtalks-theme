@@ -241,6 +241,7 @@ body.path-node .main-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-gap: 20px;
+    position: relative;
 }
 .profile-title-region > .profile-pic img {
     border-radius: 50%;
@@ -258,4 +259,9 @@ h1.page-title.profile-title {
     font-size: 0.9em;
     line-height: 1.3em;
     display: block;
+}
+.profile-edit {
+    position: absolute;
+    top: -30px;
+    right: -30px;
 }
