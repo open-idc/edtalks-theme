@@ -140,7 +140,7 @@ a.soft-link:focus {
 }
 
 a.icon-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: var(--primary-darkest);
 }
