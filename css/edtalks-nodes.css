@@ -237,4 +237,20 @@ body.path-node .main-container {
 }
 
 /** Profile: details region **/
-
+.field-profile-details-region {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+}
+.field-profile-details-region > .profile-title {
+    align-self: center;
+}
+h1.page-title.profile-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0;
+}
+.profile-role {
+    display: block;
+}
+.profile-loc {}
