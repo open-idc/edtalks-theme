@@ -74,6 +74,12 @@
       });
 
 
+      // display website url on profile better
+      $('a.get-website-url').each(function() {
+        var dataURI = $(this).text().split('://');
+        $(this).text(dataURI[1]);
+      });
+
 
 
     }

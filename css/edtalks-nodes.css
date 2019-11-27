@@ -251,9 +251,10 @@ body.path-node .main-container {
 h1.page-title.profile-title {
     font-size: 1.6em;
     font-weight: bold;
-    margin: 0;
+    margin: 0 0 10px;
+    line-height: 1em;
 }
-.profile-role {
-    display: block;
+.profile-title > span {
+    font-size: 0.9em;
+    line-height: 0.9em;
 }
-.profile-loc {}
