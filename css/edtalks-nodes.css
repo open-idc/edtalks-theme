@@ -46,6 +46,7 @@ body.path-node .main-container {
     background-color: var(--grey-lightest);
     padding: 30px;
     grid-column: 1;
+    align-self: start;
 }
 .profile-col-2 {
     margin-top: 30px;

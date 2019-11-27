@@ -8,5 +8,6 @@ global-styling:
       css/edtalks-entityforms.css: {}
   js:
     js/edtalks-theme.js: {}
+    js/readmore.min.js: {}
   dependencies:
     - core/jquery.once
