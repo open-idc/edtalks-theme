@@ -67,7 +67,11 @@
       });
 
       // enable readmore.js
-      $('.is-readmore').readmore();
+      $('.is-readmore').readmore({
+        collapsedHeight: 125,
+        moreLink: '<a href="#">Expand</a>',
+        lessLink: '<a href="#">Close</a>'
+      });
 
 
 
