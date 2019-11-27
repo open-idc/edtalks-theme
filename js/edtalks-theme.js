@@ -83,7 +83,7 @@
       // display twitter url on profile better
       $('a.get-twitter-url').each(function() {
         var dataURI = $(this).text().split('twitter.com/');
-        $(this).text(dataURI[1]);
+        $(this).text('@' + dataURI[1]);
       });
 
 
