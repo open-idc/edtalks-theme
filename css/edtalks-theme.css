@@ -134,6 +134,24 @@ a.soft-link:focus {
     text-decoration: none;
 }
 
+a.get-website-url::before {
+    content: '\e144';
+    font-family: 'Glyphicons Halflings';
+    padding-right: 15px;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+a.icon-link {
+    display: flex;
+    align-items: center;
+    color: var(--primary-darkest);
+}
+a.icon-link:hover,
+a.icon-link:focus {
+    color: var(--primary);
+    text-decoration: none;
+}
 
 /**
 ** Alert section
