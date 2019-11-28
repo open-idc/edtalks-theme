@@ -207,6 +207,7 @@ a.node-action:focus {
     text-align: center;
     font-weight: 100;
     display: block;
+    position: relative;
 }
 .flag > a > i {
     display: block;
@@ -224,6 +225,11 @@ a.node-action:focus {
 .flag.action-unflag > a:hover,
 .flag.action-unflag > a:focus {
     color: var(--red);
+}
+.flag > a > span.ajax-throbber {
+    position: absolute;
+    top: 30px;
+    left: -15px;
 }
 
 /** bookmark flag **/
