@@ -310,3 +310,9 @@ h1.page-title.profile-title {
     grid-gap: 10px;
     justify-self: end;
 }
+.event-header-details > .field {
+    max-width: 800px;
+}
+.event-header-details .field--name-field-location p {
+    margin-bottom: 0px;
+}
