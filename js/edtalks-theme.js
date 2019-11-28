@@ -91,4 +91,55 @@
     }
   }
 
+  Drupal.behaviors.socialShare = {
+    attach: function (context, settings) {
+
+      // store popup window options
+      var getWindowOptions = function() {
+        var width = 450;
+        var height = 450;
+        var left = (window.innerWidth / 2) - (width / 2);
+        var top = (window.innerHeight / 2) - (height / 2);
+      
+        return [
+          'resizable,scrollbars,status',
+          'height=' + height,
+          'width=' + width,
+          'left=' + left,
+          'top=' + top,
+        ].join();
+      };
+
+      // Share on Twitter
+      $('a.share-on-twitter').on('click', function(e){
+        var tw_text = encodeURIComponent($(this).attr('data-text'));
+        var tw_url = encodeURIComponent($(this).attr('data-url'));
+        var tw_hashtags = encodeURIComponent($(this).attr('data-hashtags'));
+        var tw_via = encodeURIComponent($(this).attr('data-via'));
+        var tw_related = encodeURIComponent($(this).attr('data-related'));
+
+        var tw_shareurl = 'https://twitter.com/intent/tweet?text=' + tw_text + '&via=' + tw_via + '&hashtags=' + tw_hashtags + '&url=' + tw_url + '&related=' + tw_related;
+        
+        e.preventDefault();
+        var win = window.open(tw_shareurl, 'ShareOnTwitter', getWindowOptions());
+        win.opener = null;
+      });
+
+      // Share on LinkedIn
+      $('a.share-on-linkedin').on('click', function(e){
+        var ln_title = encodeURIComponent($(this).attr('data-title'));
+        var ln_url = encodeURIComponent($(this).attr('data-url'));
+        var ln_summary = encodeURIComponent($(this).attr('data-summary'));
+        var ln_source = encodeURIComponent($(this).attr('data-source'));
+
+        var ln_shareurl = 'http://www.linkedin.com/shareArticle?mini=true&url=' + ln_url + '&title=' + ln_title + '&summary=' + ln_summary + '&source=' + ln_source;
+        
+        e.preventDefault();
+        var win = window.open(ln_shareurl, 'ShareOnLinkedIn', getWindowOptions());
+        win.opener = null;
+      });
+
+    }
+  }
+
 })(jQuery, Drupal, drupalSettings);

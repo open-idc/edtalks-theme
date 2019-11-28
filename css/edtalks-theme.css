@@ -151,6 +151,13 @@ a.soft-link:focus {
     text-decoration: none;
 }
 
+a.btn.icon-left {
+    line-height: unset;
+}
+a.btn.icon-left > i {
+    margin-right: 10px;
+}
+
 a.icon-link {
     display: inline-flex;
     align-items: center;
