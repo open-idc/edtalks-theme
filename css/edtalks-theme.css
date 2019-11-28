@@ -187,10 +187,21 @@ a.get-twitter-url::before {
     text-decoration: none;
     color: var(--primary-dark);
 }
-.flag-bookmark.action-unflag > a:hover,
-.flag-bookmark.action-unflag > a:focus {
+.flag.action-unflag > a {
+    color: var(--primary);
+}
+.flag.action-unflag > a:hover,
+.flag.action-unflag > a:focus {
     color: var(--red);
 }
+
+/** bookmark flag **/
+.flag.action-unflag > a::after {
+    content: 'ed';
+}
+
+
+
 
 /**
 ** Alert section
