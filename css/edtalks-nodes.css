@@ -13,6 +13,10 @@ body.path-node .main-container {
     body.path-node.page-node-type-profile .main-container {
         margin-top: 0;
     }
+    body.path-node.page-node-type-event .main-container {
+        margin-top: 0;
+        max-width: unset;
+    }
     body.path-node .main-container.node-add-edit {
         max-width: unset;
         margin-top: 0;
@@ -51,6 +55,28 @@ body.path-node .main-container {
 .profile-col-2 {
     margin-top: 30px;
 }
+
+/**
+** Event Node
+**/
+.node node--type-event.node--view-mode-full {
+    margin: -15px -15px 50px;
+}
+.event-header {
+    background-color: var(--grey-lightest);
+    padding: 30px;
+}
+
+.event-header > .max-width {
+    max-width: 1800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-gap: 50px;
+}
+
+
+
 
 /**
 ** Node fields
@@ -239,7 +265,7 @@ body.path-node .main-container {
 /** Profile: details region **/
 .profile-title-region {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 100px 4fr;
     grid-gap: 20px;
     position: relative;
 }
@@ -265,3 +291,4 @@ h1.page-title.profile-title {
     top: -30px;
     right: -30px;
 }
+
