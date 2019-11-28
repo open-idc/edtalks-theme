@@ -308,4 +308,5 @@ h1.page-title.profile-title {
     display: grid;
     grid-template-columns: repeat(2, 80px);
     grid-gap: 10px;
+    justify-self: end;
 }

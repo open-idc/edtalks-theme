@@ -131,13 +131,15 @@ fieldset[disabled] .btn-primary.focus {
 }
 
 button.copy-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: var(--primary-light);
+    color: var(--primary);
     background: unset;
     border: unset;
     font-size: 14px;
+}
+button.copy-btn:hover,
+button.copy-btn:focus,
+button.copy-btn:active {
+    color: var(--primary-darkest);
 }
 
 a.soft-link {
@@ -432,24 +434,21 @@ header.navbar .navbar-nav > li > a:active {
 **/
 .modal-body > h5 {
     font-size: 0.8em;
-    font-weight: bold;
-    color: var(--grey-dark);
+    color: var(--border-dark);
     text-transform: uppercase;
     margin: 0 0 10px;
 }
 
 .modal-body > div.modal-element {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid var(--border-light);
-    width: 100%;
-    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid var(--border-lightest);
+    display: grid;
+    grid-template-columns: auto 80px;
 }
 
 .modal-body > div.modal-element > textarea {
     border: 0;
     resize: none;
-    width: 90%;
     padding: 10px;
     height: 42px;
     vertical-align: middle;
