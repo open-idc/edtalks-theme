@@ -130,6 +130,16 @@ fieldset[disabled] .btn-primary.focus {
     border-radius: unset;
 }
 
+button.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--primary-light);
+    background: unset;
+    border: unset;
+    font-size: 14px;
+}
+
 a.soft-link {
     color: rgba(0,0,0,0.35);
 }
@@ -176,7 +186,7 @@ a.node-action {
 }
 a.node-action > i {
     display: block;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
 }
 a.node-action:hover,
@@ -198,7 +208,7 @@ a.node-action:focus {
 }
 .flag > a > i {
     display: block;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
 }
 .flag a:hover,
@@ -415,6 +425,40 @@ header.navbar .navbar-nav > li > a:active {
         margin: 0;
     }
 }
+
+
+/**
+** Modal
+**/
+.modal-body > h5 {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--grey-dark);
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.modal-body > div.modal-element {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-light);
+    width: 100%;
+    position: relative;
+}
+
+.modal-body > div.modal-element > textarea {
+    border: 0;
+    resize: none;
+    width: 90%;
+    padding: 10px;
+    height: 42px;
+    vertical-align: middle;
+    color: var(--text-mid);
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: unset;
+}
+
 
 /**
 ** Misc
