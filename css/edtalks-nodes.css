@@ -59,7 +59,7 @@ body.path-node .main-container {
 /**
 ** Event Node
 **/
-.node node--type-event.node--view-mode-full {
+.node--type-event.node--view-mode-full {
     margin: -15px -15px 50px;
 }
 .event-header {
