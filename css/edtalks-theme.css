@@ -167,6 +167,24 @@ a.get-twitter-url::before {
     font-weight: 100;
 }
 
+a.node-action {
+    font-size: 0.9em;
+    color: var(--grey-dark);
+    text-align: center;
+    font-weight: 100;
+    display: block;
+}
+a.node-action > i {
+    display: block;
+    font-size: 2.5em;
+    text-align: center;
+}
+a.node-action:hover,
+a.node-action:focus {
+    text-decoration: none;
+    color: var(--primary);
+}
+
 /** Flag Links **/
 .flag {
     text-align: center;
@@ -176,6 +194,7 @@ a.get-twitter-url::before {
     color: var(--grey-dark);
     text-align: center;
     font-weight: 100;
+    display: block;
 }
 .flag > a > i {
     display: block;
