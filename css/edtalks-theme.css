@@ -167,6 +167,29 @@ a.get-twitter-url::before {
     font-weight: 100;
 }
 
+/** Flag Links **/
+.flag > a {
+    font-size: 0.9em;
+    color: var(--grey-dark);
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 100;
+}
+.flag > a > i {
+    display: block;
+    font-size: 2.5em;
+    text-align: center;
+}
+.flag a:hover,
+.flag a:focus {
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+.flag-bookmark.action-unflag > a:hover,
+.flag-bookmark.action-unflag > a:focus {
+    color: var(--red);
+}
+
 /**
 ** Alert section
 **/

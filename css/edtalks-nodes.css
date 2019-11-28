@@ -60,13 +60,12 @@ body.path-node .main-container {
 ** Event Node
 **/
 .node--type-event.node--view-mode-full {
-    margin: -15px -15px 50px;
+    margin: 0 -15px 50px;
 }
 .event-header {
     background-color: var(--grey-lightest);
     padding: 30px;
 }
-
 .event-header > .max-width {
     max-width: 1800px;
     margin: auto;
@@ -292,3 +291,21 @@ h1.page-title.profile-title {
     right: -30px;
 }
 
+/** Event Header Region **/
+.event-header-details {
+    padding-top: 30px;
+}
+.event-header-details .event-title-region {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+.event-title-region h1.page-title.event-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+.event-title-region .node-actions-region {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
