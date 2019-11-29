@@ -414,11 +414,17 @@ h1.page-title.profile-title {
 .event-vertical-tabs .tabs-left > .tab-content {
     border-radius: unset;
     box-shadow: unset;
-    padding: 0;
+    padding: 0 15px;
     border: unset;
 }
 .event-vertical-tabs .tabs-left > .tab-content .panel-body {
     padding: 0;
+}
+
+@media (min-width: 1920px) {
+    .event-vertical-tabs .tabs-left > .tab-content {
+        padding: 0;
+    }
 }
 
 /** Photo Gallery Grid **/
