@@ -316,3 +316,45 @@ h1.page-title.profile-title {
 .event-header-details .field--name-field-location p {
     margin-bottom: 0px;
 }
+
+/** Event Vertical (actually horizontal) Tabs **/
+.event-vertical-tabs .tabs-left {
+    margin: 10px 15px 15px;
+}
+.event-vertical-tabs .tabs-left > .nav-tabs {
+    float: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.event-vertical-tabs .tabs-left > .nav-tabs > li {
+    display: inline-block;
+    margin: 0;
+}
+.event-vertical-tabs .tabs-left > .nav-tabs > li > a {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    margin: 0;
+    box-shadow: unset;
+    background-color: unset;
+}
+.event-vertical-tabs .tabs-left > .nav-tabs > li.active > a {
+    border-color: var(--primary);
+    box-shadow: unset;
+    color: var(--primary);
+}
+.event-vertical-tabs .tabs-left > .nav-tabs > li > a:hover,
+.event-vertical-tabs .tabs-left > .nav-tabs > li > a:focus {
+    color: var(--primary);
+    border-color: var(--primary);  
+}
+.event-vertical-tabs .tabs-left > .nav-tabs > li.active > a:hover,
+.event-vertical-tabs .tabs-left > .nav-tabs > li.active > a:focus {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+.event-vertical-tabs .tabs-left > .tab-content {
+    border-radius: unset;
+    box-shadow: unset;
+}

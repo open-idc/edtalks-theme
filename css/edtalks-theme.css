@@ -69,8 +69,6 @@ body.navbar-is-fixed-top {
     font-size: inherit;
     font-weight: 500;
     text-transform: unset;
-    line-height: 1em;
-    height: 37px;
 }
 .btn-primary {
     background-color: var(--primary-light);
