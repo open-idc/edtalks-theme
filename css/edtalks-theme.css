@@ -477,6 +477,11 @@ header.navbar .navbar-nav > li > a:active {
     overflow: hidden;
 }
 
+.panelled-region {
+    padding: 30px;
+    background-color: var(--grey-light);
+}
+
 /**
 ** Utilities
 **/
