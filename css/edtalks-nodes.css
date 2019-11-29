@@ -73,6 +73,13 @@ body.path-node .main-container {
     grid-template-columns: 400px auto;
     grid-gap: 50px;
 }
+.event-body {
+    max-width: 1800px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 60px;
+}
 
 
 
