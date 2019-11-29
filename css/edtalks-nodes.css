@@ -4,6 +4,10 @@
 body.path-node .main-container {
     margin-top: 15px;
 }
+body.path-node.page-node-type-profile .main-container,
+body.path-node.page-node-type-event .main-container {
+    margin-top: 0;
+}
 
 @media (min-width: 1920px) {
     body.path-node .main-container {
@@ -70,24 +74,39 @@ body.path-node .main-container {
     max-width: 1800px;
     margin: auto;
     display: grid;
-    grid-template-columns: 400px auto;
-    grid-gap: 50px;
+    grid-template-columns: 50px auto;
+    grid-gap: 15px;
 }
 .event-talks {
     max-width: 1800px;
-    margin: 0 auto 50px;
+    margin: 50px 30px;
 }
 .event-body {
     max-width: 1800px;
-    margin: 0 auto;
-    grid-template-columns: repeat(2, 1fr);
+    margin: 0 30px;
+    grid-template-columns: 1fr;
     display: grid;
-    grid-gap: 60px;
+    grid-gap: 15px;
 }
 .event-gallery {
     margin: 50px 0 0;
     padding: 40px;
     background: var(--grey-lightest);
+}
+
+@media (min-width: 768px) {
+    .event-header > .max-width {
+        grid-template-columns: 400px auto;
+        grid-gap: 50px;
+    }
+    .event-talks {
+        margin: 50px auto;
+    }
+    .event-body {
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 60px;
+    }
 }
 
 
