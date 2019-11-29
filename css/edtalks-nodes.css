@@ -319,13 +319,14 @@ h1.page-title.profile-title {
 
 /** Event Vertical (actually horizontal) Tabs **/
 .event-vertical-tabs .tabs-left {
-    margin: 10px 15px 15px;
+    margin: 15px 0;
 }
 .event-vertical-tabs .tabs-left > .nav-tabs {
     float: none;
     margin: 0;
     width: 100%;
     padding: 0;
+    border-bottom: 1px solid var(--primary-10);
 }
 .event-vertical-tabs .tabs-left > .nav-tabs > li {
     display: inline-block;
@@ -357,4 +358,9 @@ h1.page-title.profile-title {
 .event-vertical-tabs .tabs-left > .tab-content {
     border-radius: unset;
     box-shadow: unset;
+    padding: 0;
+    border: unset;
+}
+.event-vertical-tabs .tabs-left > .tab-content .panel-body {
+    padding: 15px;
 }
