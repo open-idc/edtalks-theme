@@ -379,3 +379,10 @@ h1.page-title.profile-title {
 .event-vertical-tabs .tabs-left > .tab-content .panel-body {
     padding: 15px;
 }
+
+/** Photo Gallery Grid **/
+.field--name-field-gallery .field--items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
