@@ -68,7 +68,7 @@ body.path-node.page-node-type-event .main-container {
 }
 .event-header {
     background-color: var(--grey-lightest);
-    padding: 30px;
+    padding: 15px;
 }
 .event-header > .max-width {
     max-width: 1800px;
@@ -95,6 +95,9 @@ body.path-node.page-node-type-event .main-container {
 }
 
 @media (min-width: 768px) {
+    .event-header {
+        padding: 30px;
+    }
     .event-header > .max-width {
         grid-template-columns: 400px auto;
         grid-gap: 50px;
@@ -327,11 +330,11 @@ h1.page-title.profile-title {
 
 /** Event Header Region **/
 .event-header-details {
-    padding-top: 30px;
+    padding-top: 0px;
 }
 .event-header-details .event-title-region {
     display: grid;
-    grid-template-columns: 10fr 2fr;
+    grid-template-columns: 1fr;
 }
 .event-title-region h1.page-title.event-title {
     font-size: 2em;
@@ -349,6 +352,15 @@ h1.page-title.profile-title {
 }
 .event-header-details .field--name-field-location p {
     margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+    .event-header-details {
+        padding-top: 30px;
+    }
+    .event-header-details .event-title-region {
+        grid-template-columns: 10fr 2fr;
+    }
 }
 
 /** Event Vertical (actually horizontal) Tabs **/
