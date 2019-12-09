@@ -434,26 +434,19 @@ h1.page-title.profile-title {
     grid-gap: 10px;
 }
 
-/** Event Registration Info Panel **/
-.event-registration-panel .panel-body {
-    display: block;
+/** Two Column Panel **/
+.two-col-panel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px 0;
+    border-top: 1px solid var(--border-lightest);
+    border-bottom: 1px solid var(--border-lightest);
 }
-.event-registration-panel .panel-body .col-1 {
-    grid-column: 1;
+h2.twoc-panel-title {
+    font-size: 2em;
+    margin: 0 15px 25px;
 }
-.event-registration-panel .panel-body .col-2 {
-    grid-column: 2;
-}
-@media (min-width: 768px) {
-    .event-registration-panel .panel-body {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 0 50px;
-    }
-}
-@media (min-width: 992px) {
-    .event-registration-panel .panel-body {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0 100px;
-    }
+.two-col-panel > .highlighted-col {
+    padding: 30px;
+    background: var(--grey-lightest);
 }
