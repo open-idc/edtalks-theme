@@ -437,10 +437,8 @@ h1.page-title.profile-title {
 /** Two Column Panel **/
 .two-col-panel {
     margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 50px 0;
+    padding-top: 50px;
     border-top: 1px solid var(--border-lightest);
-    border-bottom: 1px solid var(--border-lightest);
 }
 h2.twoc-panel-title {
     font-size: 2em;
