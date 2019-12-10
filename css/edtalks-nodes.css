@@ -62,6 +62,8 @@ body.path-node.page-node-type-event .main-container {
 }
 
 @media (min-width: 768px) {
+}
+@media (min-width: 992px) {
     .node--type-profile.node--view-mode-full {
         grid-template-columns: 30% auto;
     }
