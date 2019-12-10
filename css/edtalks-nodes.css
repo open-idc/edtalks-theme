@@ -71,10 +71,7 @@ body.path-node.page-node-type-event .main-container {
     padding: 15px;
 }
 .event-header > .max-width {
-    max-width: 1800px;
-    margin: auto;
     display: grid;
-    grid-template-columns: 50px auto;
     grid-gap: 15px;
 }
 .event-talks {
@@ -92,6 +89,10 @@ body.path-node.page-node-type-event .main-container {
 }
 
 @media (min-width: 768px) {
+    .event-header > .max-width {
+        max-width: 1800px;
+        grid-template-columns: 50px auto;
+    }
     .event-header {
         padding: 30px;
     }
@@ -349,13 +350,14 @@ h1.page-title.profile-title {
 .event-title-region h1.page-title.event-title {
     font-size: 2em;
     font-weight: bold;
-    margin: 0;
+    margin: 15px 0 0 0;
+    grid-row: 2;
 }
 .event-title-region .node-actions-region {
     display: grid;
     grid-template-columns: repeat(2, 80px);
     grid-gap: 10px;
-    justify-self: end;
+    justify-self: start;
 }
 .event-header-details > .field {
     max-width: 800px;
@@ -370,6 +372,13 @@ h1.page-title.profile-title {
     }
     .event-header-details .event-title-region {
         grid-template-columns: 10fr 2fr;
+    }
+    .event-title-region h1.page-title.event-title {
+        grid-row: 1;
+        margin: 0;
+    }
+    .event-title-region .node-actions-region {
+        justify-self: end;
     }
 }
 
