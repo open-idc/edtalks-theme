@@ -47,7 +47,7 @@ body.path-node.page-node-type-event .main-container {
 .node--type-profile.node--view-mode-full {
     display: grid;
     margin-bottom: 50px;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 1fr;
     grid-gap: 0 50px;
 }
 .profile-col-1 {
@@ -55,9 +55,19 @@ body.path-node.page-node-type-event .main-container {
     padding: 30px;
     grid-column: 1;
     align-self: start;
+    margin: 0 -15px;
 }
 .profile-col-2 {
     margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .node--type-profile.node--view-mode-full {
+        grid-template-columns: 30% auto;
+    }
+    .profile-col-1 {
+        margin: 0;
+    }
 }
 
 /**
