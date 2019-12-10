@@ -79,8 +79,6 @@ body.path-node.page-node-type-event .main-container {
     margin: 50px 30px;
 }
 .event-body {
-    max-width: 1800px;
-    margin: 0 auto;
     padding: 0 15px;
 }
 .event-gallery {
@@ -105,10 +103,8 @@ body.path-node.page-node-type-event .main-container {
         margin: 50px auto;
     }
     .event-body {
+        max-width: 1800px;
         margin: 0 auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 60px;
-        padding: 0;
     }
     .event-gallery {
         margin: 50px 0 0;
@@ -457,7 +453,7 @@ h1.page-title.profile-title {
 /** Two Column Panel **/
 .two-col-panel {
     margin-top: 25px;
-    padding-top: 25px;
+    padding-top: 10px;
     border-top: 1px solid var(--border-lightest);
 }
 h2.twoc-panel-title {
@@ -485,12 +481,14 @@ h2.twoc-panel-title::after {
     margin-top: 15px;
 }
 @media (min-width: 768px) {
-    .two-col-panel {
-        margin-top: 50px;
-        padding-top: 50px;
-    }
     .two-col-panel > .highlighted-col {
         margin-top: 0px;
         padding: 30px;
+    }
+}
+@media (min-width: 992px) {
+    .two-col-panel {
+        margin-top: 50px;
+        padding-top: 25px;
     }
 }
