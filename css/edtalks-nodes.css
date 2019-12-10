@@ -81,10 +81,11 @@ body.path-node.page-node-type-event .main-container {
 .event-body {
     max-width: 1800px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .event-gallery {
-    margin: 50px 0 0;
-    padding: 40px;
+    margin: 25px 0 0;
+    padding: 5px 15px 15px 15px;
     background: var(--grey-lightest);
 }
 
@@ -107,6 +108,11 @@ body.path-node.page-node-type-event .main-container {
         margin: 0 auto;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 60px;
+        padding: 0;
+    }
+    .event-gallery {
+        margin: 50px 0 0;
+        padding: 40px;
     }
 }
 
@@ -439,25 +445,52 @@ h1.page-title.profile-title {
 /** Photo Gallery Grid **/
 .field--name-field-gallery .field--items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 10px;
+}
+@media (min-width: 768px) {
+    .field--name-field-gallery .field--items {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
 
 /** Two Column Panel **/
 .two-col-panel {
-    margin-top: 50px;
-    padding-top: 50px;
+    margin-top: 25px;
+    padding-top: 25px;
     border-top: 1px solid var(--border-lightest);
 }
 h2.twoc-panel-title {
-    font-size: 2em;
-    margin: 0 15px 25px;
+    font-weight: 600;
+    color: var(--primary-darkest);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-size: 1em;
+    line-height: 1.846;
+}
+h2.twoc-panel-title::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-darkest);
 }
 .two-col-panel > .col-1 {
     max-width: 800px;
-    font-size: 16px;
 }
 .two-col-panel > .highlighted-col {
-    padding: 30px;
+    padding: 15px 30px;
     background: var(--grey-lightest);
+    margin-top: 15px;
+}
+@media (min-width: 768px) {
+    .two-col-panel {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+    .two-col-panel > .highlighted-col {
+        margin-top: 0px;
+        padding: 30px;
+    }
 }
