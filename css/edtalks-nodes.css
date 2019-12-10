@@ -173,6 +173,10 @@ body.path-node.page-node-type-event .main-container {
     border-radius: 4px;
 }
 
+/** Field: Node edit button **/
+.field-node-edit {
+    margin-bottom: 15px;
+}
 
 
 /**
@@ -339,9 +343,7 @@ h1.page-title.profile-title {
     display: block;
 }
 .profile-edit {
-    position: absolute;
-    top: -30px;
-    right: -30px;
+    grid-column: span 2;
 }
 
 /** Event Header Region **/
