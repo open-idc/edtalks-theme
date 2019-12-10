@@ -108,7 +108,7 @@ body.path-node.page-node-type-event .main-container {
     }
     .event-gallery {
         margin: 50px 0 0;
-        padding: 40px;
+        padding: 25px;
     }
 }
 
@@ -116,6 +116,9 @@ body.path-node.page-node-type-event .main-container {
     .event-header > .max-width {
         grid-template-columns: 300px auto;
         grid-gap: 50px;
+    }
+    .event-gallery {
+        padding: 40px;
     }
 }
 
