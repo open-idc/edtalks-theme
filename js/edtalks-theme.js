@@ -44,8 +44,8 @@
       // better looking event date output
       $('.event-compare-dates').each(function() {
         
-        var startDate = $('time:first-of-type');
-        var endDate = $('time:last-of-type');
+        var startDate = $('time:first-of-type', this);
+        var endDate = $('time:last-of-type', this);
         var splitStartText = $(startDate).text().split(' ');
         var splitEndText = $(endDate).text().split(' ');
         var newDateText;
