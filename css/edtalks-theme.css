@@ -214,11 +214,10 @@ a.get-twitter-url::before {
 
 a.node-action {
     font-size: 1em;
+    color: var(--grey-dark);
     text-align: center;
     font-weight: 100;
     display: block;
-    background-color: var(--primary-darkest);
-    color: white;
 }
 a.node-action > i {
     margin-right: 5px;
@@ -226,26 +225,17 @@ a.node-action > i {
 a.node-action:hover,
 a.node-action:focus {
     text-decoration: none;
-    background-color: var(--primary-dark);
-    color: white;
+    color: var(--primary);
 }
 @media (min-width: 768px) {
     a.node-action {
         font-size: 0.9em;
-        color: var(--grey-dark);
-        background-color: unset;
     }
     a.node-action > i {
         display: block;
-        font-size: 2em; 
+        font-size: 2em;
         text-align: center;
-        margin-right: 0px;
-    }
-    a.node-action:hover,
-    a.node-action:focus {
-        text-decoration: none;
-        background-color: unset;
-        color: var(--primary);
+        margin-right: 0;
     }
 }
 
