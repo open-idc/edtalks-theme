@@ -244,7 +244,7 @@ a.node-action:focus {
     text-align: center;
 }
 .flag > a {
-    font-size: 0.9em;
+    font-size: 1em;
     color: var(--grey-dark);
     text-align: center;
     font-weight: 100;
@@ -252,9 +252,7 @@ a.node-action:focus {
     position: relative;
 }
 .flag > a > i {
-    display: block;
-    font-size: 2em;
-    text-align: center;
+    margin-right: 5px;
 }
 .flag a:hover,
 .flag a:focus {
@@ -273,12 +271,21 @@ a.node-action:focus {
     top: 30px;
     left: -15px;
 }
-
 /** bookmark flag **/
 .flag.action-unflag > a::after {
     content: 'ed';
 }
-
+@media (min-width: 768px) {
+    .flag > a {
+        font-size: 0.9em;
+    }
+    .flag > a > i {
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        margin-right: 0px;
+    }
+}
 
 
 
