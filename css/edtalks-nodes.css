@@ -232,6 +232,10 @@ body.path-node.page-node-type-event .main-container {
 .talk-title-actions .talk-actions {
     text-align: right;
 }
+.talk-title-actions .talk-actions > * {
+    display: inline-block;
+    margin-left: 10px;
+}
 .talk-title-actions .talk-actions > a {
     color: var(--grey-dark);
     font-size: 0.9em;
