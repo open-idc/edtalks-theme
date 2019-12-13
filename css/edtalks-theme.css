@@ -50,6 +50,34 @@ body {
 body.navbar-is-fixed-top {
     margin-top: 0;
 }
+
+.field--type-text-with-summary h2,
+.field--type-text-long h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.field--type-text-with-summary h3,
+.field--type-text-long h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.field--type-text-with-summary h4,
+.field--type-text-long h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+.field--type-text-with-summary h5,
+.field--type-text-long h5 {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic
+}
+.field--type-text-with-summary h6,
+.field--type-text-long h6 {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
 @media (min-width: 768px) {
     body {
         font-size: 14px;

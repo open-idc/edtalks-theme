@@ -187,7 +187,8 @@ body.path-node.page-node-type-event .main-container {
 
 /** Field: Node edit button **/
 .field-node-edit {
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
