@@ -175,14 +175,15 @@ body.path-node.page-node-type-event .main-container {
 /** Field: Tags **/
 .field.field--name-field-tags .field--item {
     display: inline-block;
-    margin: 0 3px 3px 0;
+    margin: 0 3px 5px 0;
 }
-.field--name-field-tags a {
+.field--name-field-tags .field--item > a {
     padding: 8px 12px;
     background-color: var(--primary-10);
     color: black;
     line-height: 1em;
     border-radius: 4px;
+    display: inline-block;
 }
 
 /** Field: Node edit button **/

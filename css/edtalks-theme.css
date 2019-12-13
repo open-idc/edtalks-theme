@@ -538,6 +538,13 @@ header.navbar .navbar-nav > li > a:active {
     background-color: var(--grey-light);
 }
 
+body.user-logged-in .for-guest {
+    display: none;
+}
+body:not(.user-logged-in) .for-member {
+    display: none;
+}
+
 /**
 ** Utilities
 **/
