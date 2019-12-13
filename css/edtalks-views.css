@@ -99,6 +99,13 @@ h3.card-title a:focus {
     color: var(--primary-dark);
 }
 
+/**
+** Card for Events grid (/attend)
+**/
+.grid-card-item .card-details {
+    margin-top: 10px;
+    line-height: 1.2em;
+}
 
 /** View Pager **/
 .view > nav.pager-nav {
