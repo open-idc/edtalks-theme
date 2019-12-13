@@ -234,7 +234,7 @@ body.path-node.page-node-type-event .main-container {
 }
 .talk-title-actions .talk-actions > * {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 1em;
 }
 .talk-title-actions .talk-actions > a {
     color: var(--grey-dark);
@@ -257,6 +257,14 @@ body.path-node.page-node-type-event .main-container {
 .talk-actions > a:hover > span.glyphicon,
 .talk-actions > a:focus > span.glyphicon {
     color: var(--primary);
+}
+.talk-title-details {
+    grid-column: span 2;
+    margin-top: 20px;
+}
+.talk-subtitle-top {
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
 }
 .talk-subtitle-top a {
     color: var(--grey-dark);
@@ -283,6 +291,9 @@ body.path-node.page-node-type-event .main-container {
     .talk-title-actions {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .talk-title-actions .talk-actions > * {
+        margin-left: 2em;
     }
 }
 
