@@ -246,7 +246,7 @@ a.node-action:focus {
         text-decoration: none;
         background-color: unset;
         color: var(--primary);
-}
+    }
 }
 
 /** Flag Links **/

@@ -386,9 +386,9 @@ h1.page-title.profile-title {
 }
 .event-title-region .node-actions-region {
     display: grid;
-    grid-template-columns: repeat(2, 80px);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 10px;
-    justify-self: start;
+    background-color: var(--primary-10);
 }
 .event-header-details > .field {
     max-width: 800px;
@@ -410,6 +410,7 @@ h1.page-title.profile-title {
     }
     .event-title-region .node-actions-region {
         justify-self: end;
+        grid-template-columns: repeat(2, 80px);
     }
 }
 
