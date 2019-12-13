@@ -22,7 +22,8 @@
       });
 
       // offcanvas menu
-      $('button.navbar-toggle[data-toggle="offcanvas"]').click(function() {
+      $('button.navbar-toggle[data-toggle="offcanvas"]').click(function(e) {
+        e.preventDefault();
         var targetEl = $(this).attr("data-target");
         if ($(targetEl).hasClass("is-open")) {
           $(targetEl)
@@ -40,6 +41,8 @@
         $('#navbar-offcanvas.is-open').removeClass("is-open").css("left", "-82%");
         $(this).css("display", "none");
       });
+
+
 
       // better looking event date output
       $('.event-compare-dates').each(function() {
