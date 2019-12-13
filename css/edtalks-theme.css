@@ -478,24 +478,35 @@ header.navbar .navbar-nav > li > a:active {
     text-transform: uppercase;
     margin: 0 0 10px;
 }
-
 .modal-body > div.modal-element {
     margin-bottom: 30px;
     border: 1px solid var(--border-lightest);
     display: grid;
     grid-template-columns: auto 80px;
 }
-
 .modal-body > div.modal-element > textarea {
     border: 0;
     resize: none;
-    padding: 10px;
+    padding: 13px 10px;
     height: 42px;
     vertical-align: middle;
     color: var(--text-mid);
-    font-size: 14px;
+    font-size: 11px;
     overflow: hidden;
     border-radius: unset;
+}
+.modal-body .node-share-buttons .btn {
+    display: block;
+    margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+    .modal-body > div.modal-element > textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .modal-body .node-share-buttons .btn {
+        display: inline-block;
+    }
 }
 
 
