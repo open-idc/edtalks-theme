@@ -22,27 +22,45 @@
       });
 
       // offcanvas menu
-      $('button.navbar-toggle[data-toggle="offcanvas"]').click(function(e) {
-        e.preventDefault();
+      // $('button.navbar-toggle[data-toggle="offcanvas"]').click(function() {
+      //   var targetEl = $(this).attr("data-target");
+      //   if ($(targetEl).hasClass("is-open")) {
+      //     $(targetEl)
+      //       .removeClass("is-open")
+      //       .css("left", "-82%");
+      //       $("#off-canvas-overlay").css("display", "none");
+      //   } else {
+      //     $(targetEl)
+      //       .addClass("is-open")
+      //       .css("left", "0%");
+      //     $("#off-canvas-overlay").css("display", "block");
+      //   }
+      // });
+      // $('#off-canvas-overlay').click(function() {
+      //   $('#navbar-offcanvas.is-open').removeClass("is-open").css("left", "-82%");
+      //   $(this).css("display", "none");
+      // });
+
+      // open offcanvas menu
+      $('button.is-closed.navbar-toggle[data-toggle="offcanvas"]').click(function() {
         var targetEl = $(this).attr("data-target");
-        if ($(targetEl).hasClass("is-open")) {
-          $(targetEl)
-            .removeClass("is-open")
-            .css("left", "-82%");
-            $("#off-canvas-overlay").css("display", "none");
-        } else {
-          $(targetEl)
-            .addClass("is-open")
-            .css("left", "0%");
-          $("#off-canvas-overlay").css("display", "block");
-        }
+        $(this).addClass('is-open').removeClass('is-closed');
+        $(targetEl).addClass("is-open").css("left", "0%");
+        $("#off-canvas-overlay").css("display", "block");
       });
+      // close offcanvas menu
+      $('button.is-open.navbar-toggle[data-toggle="offcanvas"]').click(function() {
+        var targetEl = $(this).attr("data-target");
+        $(this).addClass('is-closed').removeClass('is-open');
+        $(targetEl).removeClass("is-open").css("left", "-82%");
+        $("#off-canvas-overlay").css("display", "none");
+      });
+      // close offcanvas menu on overlay click
       $('#off-canvas-overlay').click(function() {
         $('#navbar-offcanvas.is-open').removeClass("is-open").css("left", "-82%");
+        $('button.is-closed.navbar-toggle[data-toggle="offcanvas"]').removeClass('is-open').addClass('is-closed');
         $(this).css("display", "none");
       });
-
-
 
       // better looking event date output
       $('.event-compare-dates').each(function() {
