@@ -51,7 +51,7 @@
       // close offcanvas menu
       $('button.is-open.navbar-toggle[data-toggle="offcanvas"]').click(function() {
         var targetEl = $(this).attr("data-target");
-        $(this).addClass('is-closed').removeClass('is-open');
+        $(this).removeClass('is-open').addClass('is-closed');
         $(targetEl).removeClass("is-open").css("left", "-82%");
         $("#off-canvas-overlay").css("display", "none");
       });
