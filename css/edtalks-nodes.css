@@ -541,3 +541,16 @@ h2.twoc-panel-title::after {
         padding-top: 25px;
     }
 }
+
+
+/**
+** Upload Page
+**/
+.upload-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    grid-gap: 100px;
+    justify-items: center;
+    margin: auto;
+}
