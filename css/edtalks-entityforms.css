@@ -149,6 +149,9 @@
     border-bottom: 1px solid var(--border-lightest);
 }
 
+#edit-field-video-0-h5p-content-editor > label {
+    display: none;
+}
 
 /**
 ** Entity form action buttons
