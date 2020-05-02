@@ -98,6 +98,7 @@ body.navbar-is-fixed-top {
     box-shadow: unset;
     font-weight: 500;
     text-transform: unset;
+    font-size: 1em;
 }
 .btn-sm {
     font-size: 0.9em;
