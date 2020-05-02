@@ -472,6 +472,12 @@ header.navbar .navbar-nav > li > a:active {
     }
 }
 
+/**
+** Main Region
+**/
+div[role="main"].main-container {
+    min-height: 80vh;
+}
 
 /**
 ** Sidebar block layouts
@@ -508,6 +514,17 @@ header.navbar .navbar-nav > li > a:active {
     }
 }
 
+/**
+** Region Footer
+**/
+footer {
+    background-color: var(--primary);
+    color: white;
+}
+.region-footer {
+    max-width: 1240px;
+    margin: auto;
+}
 
 /**
 ** Modal
