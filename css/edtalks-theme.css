@@ -158,16 +158,20 @@ fieldset[disabled] .btn-primary.focus {
 .btn-grey {
     background-color: var(--admin-grey);
     color: black;
+    background-size: 200% 200%;
+    background-position: 50%;
 }
 .btn-grey:hover,
 .btn-grey:focus {
-    background-color: var(--primary-dark);
+    background-color: var(--primary);
     color: white;
 }
 .btn-grey:active {
-    background-color: var(--primary-dark);
-    background-image: radial-gradient(circle, var(--admin-grey) 10%, var(--primary) 11%);
+    background-color: var(--primary);
+    background-image: radial-gradient(circle, var(--primary) 10%, var(--admin-grey) 11%);
     box-shadow: unset;
+    background-repeat: no-repeat;
+    background-size: 1000% 1000%;
 }
 
 .btn.edit-node {
