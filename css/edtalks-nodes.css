@@ -229,11 +229,11 @@ body.path-node.page-node-type-event .main-container {
     font-size: .9em;
     color: var(--grey-dark);
 }
-.talk-title-actions .talk-actions {
+.talk-title-actions > .talk-actions {
     text-align: right;
 }
 .talk-title-actions .talk-actions > * {
-    display: inline-block;
+    display: inline-flex;
     margin-left: 1em;
 }
 .talk-title-actions .talk-actions > a {
