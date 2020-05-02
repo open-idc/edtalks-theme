@@ -163,12 +163,12 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-grey:hover,
 .btn-grey:focus {
-    background-color: var(--primary);
-    color: white;
+    background-color: var(--border-light);
+    color: black;
 }
 .btn-grey:active {
-    background-color: var(--primary);
-    background-image: radial-gradient(circle, var(--primary) 10%, var(--admin-grey) 11%);
+    background-color: var(--border-light);
+    background-image: radial-gradient(circle, var(--border-light) 10%, var(--admin-grey) 11%);
     box-shadow: unset;
     background-repeat: no-repeat;
     background-size: 1000% 1000%;
