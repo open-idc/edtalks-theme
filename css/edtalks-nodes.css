@@ -92,6 +92,7 @@ body.path-node.page-node-type-event .main-container {
 .event-header > .max-width {
     display: grid;
     grid-gap: 15px;
+    margin: auto;
 }
 .event-talks {
     max-width: 1240px;
@@ -107,14 +108,11 @@ body.path-node.page-node-type-event .main-container {
 }
 
 @media (min-width: 768px) {
-    .event-header > .max-width {
-        max-width: 1240px;
-        grid-template-columns: 50px auto;
-    }
     .event-header {
         padding: 30px;
     }
     .event-header > .max-width {
+        max-width: 1240px;
         grid-template-columns: 150px auto;
         grid-gap: 50px;
     }
@@ -152,9 +150,15 @@ body.path-node.page-node-type-event .main-container {
     .event-header > .max-width {
         max-width: 1400px;
     }
+    .event-body {
+        max-width: 1400px;
+    }
 }
-@media (min-width: 1920) {
+@media (min-width: 1920px) {
     .event-header > .max-width {
+        max-width: 1800px;
+    }
+    .event-body {
         max-width: 1800px;
     }
 }
