@@ -525,6 +525,15 @@ footer {
     max-width: 1240px;
     margin: auto;
 }
+footer a {
+    color: white;
+}
+footer a:hover,
+footer a:focus {
+    color: white;
+    background-color: var(--primary-dark);
+    text-decoration: none;
+}
 
 /**
 ** Modal
