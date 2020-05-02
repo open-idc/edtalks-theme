@@ -546,6 +546,17 @@ footer a:focus {
     background-color: var(--primary-dark);
     text-decoration: none;
 }
+@media (min-width: 1600px) {
+    .region-footer {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .region-footer {
+        max-width: 1800px;
+    }
+}
 
 /**
 ** Modal

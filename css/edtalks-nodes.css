@@ -3,6 +3,7 @@
 **/
 body.path-node .main-container {
     margin-top: 15px;
+    max-width: 1240px;
 }
 body.path-node.page-node-type-profile .main-container,
 body.path-node.page-node-type-event .main-container {
@@ -93,7 +94,7 @@ body.path-node.page-node-type-event .main-container {
     grid-gap: 15px;
 }
 .event-talks {
-    max-width: 1800px;
+    max-width: 1240px;
     margin: 50px 30px;
 }
 .event-body {
@@ -107,7 +108,7 @@ body.path-node.page-node-type-event .main-container {
 
 @media (min-width: 768px) {
     .event-header > .max-width {
-        max-width: 1800px;
+        max-width: 1240px;
         grid-template-columns: 50px auto;
     }
     .event-header {
@@ -121,7 +122,7 @@ body.path-node.page-node-type-event .main-container {
         margin: 50px auto;
     }
     .event-body {
-        max-width: 1800px;
+        max-width: 1240px;
         margin: 0 auto;
     }
     .event-gallery {
@@ -147,6 +148,16 @@ body.path-node.page-node-type-event .main-container {
     }
 }
 
+@media (min-width: 1600px) {
+    .event-header > .max-width {
+        max-width: 1400px;
+    }
+}
+@media (min-width: 1920) {
+    .event-header > .max-width {
+        max-width: 1800px;
+    }
+}
 
 /**
 ** Node fields
