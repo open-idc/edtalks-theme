@@ -559,7 +559,7 @@ p.card-description {
     margin-top: 1.5em;
 }
 .grid-card-claim {
-    margin: 3em 1em;
+    margin: 3em 0;
     padding: 2.5em;
     background-color: var(--primary-10);
 }

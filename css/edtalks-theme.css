@@ -35,6 +35,8 @@
     --border-dark: #aaaaaa;
     --border-darkest: #232323;
 
+    --admin-grey: #E6F5F4;
+
     --shadow-low: 0 2px 5px rgba(0, 0, 0, 0.10);
     --shadow-mid: 0 5px 10px rgba(0, 0, 0, 0.15);
     --shadow-high: 0 5px 15px rgba(0, 0, 0, 0.20);
@@ -94,9 +96,11 @@ body.navbar-is-fixed-top {
 **/
 .btn {
     box-shadow: unset;
-    font-size: inherit;
     font-weight: 500;
     text-transform: unset;
+}
+.btn-sm {
+    font-size: 0.9em;
 }
 .btn-primary {
     background-color: var(--primary-light);
@@ -149,6 +153,17 @@ fieldset[disabled] .btn-primary.focus {
     background-color: var(--red-dark);
     background-image: radial-gradient(circle, var(--red-dark) 10%, var(--red-light) 11%);
     box-shadow: unset;
+}
+
+.btn-grey {
+    background-color: var(--admin-grey);
+    color: black;
+}
+.btn-grey:hover,
+.btn-grey:focus,
+.btn-grey:active {
+    background-color: var(--primary-dark);
+    color: white;
 }
 
 .btn.edit-node {
