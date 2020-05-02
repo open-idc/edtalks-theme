@@ -27,6 +27,16 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
+@media (min-width: 1600px) {
+    .view.maxwidth {
+        max-width: 1400px;
+    }
+}
+@media (min-width: 1920px) {
+    .view.maxwidth {
+        max-width: 1800px;
+    }
+}
 
 /**
 ** Grid Card Layout

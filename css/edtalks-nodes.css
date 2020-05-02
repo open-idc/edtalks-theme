@@ -136,6 +136,8 @@ body.path-node.page-node-type-event .main-container {
     }
     .event-gallery {
         padding: 40px;
+        max-width: 1240px;
+        margin: auto;
     }
 }
 
@@ -153,12 +155,18 @@ body.path-node.page-node-type-event .main-container {
     .event-body {
         max-width: 1400px;
     }
+    .event-gallery {
+        max-width: 1400px;
+    }
 }
 @media (min-width: 1920px) {
     .event-header > .max-width {
         max-width: 1800px;
     }
     .event-body {
+        max-width: 1800px;
+    }
+    .event-gallery {
         max-width: 1800px;
     }
 }
