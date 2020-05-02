@@ -546,11 +546,20 @@ h2.twoc-panel-title::after {
 /**
 ** Upload Page
 **/
-.upload-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
-    grid-gap: 100px;
-    justify-items: center;
-    margin: auto;
+.upload-grid .grid-card-item {
+    padding: 1.5em 2.5em;
+    background: white;
+    border: 1px solid var(--border-lightest);
+}
+p.card-description {
+    line-height: 1.4em;
+    margin-top: 1.5em;
+}
+.card-action {
+    margin-top: 1.5em;
+}
+.grid-card-claim {
+    margin: 3em 1em;
+    padding: 2.5em;
+    background-color: var(--primary-10);
 }
