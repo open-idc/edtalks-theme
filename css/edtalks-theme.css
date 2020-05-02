@@ -160,10 +160,14 @@ fieldset[disabled] .btn-primary.focus {
     color: black;
 }
 .btn-grey:hover,
-.btn-grey:focus,
-.btn-grey:active {
+.btn-grey:focus {
     background-color: var(--primary-dark);
     color: white;
+}
+.btn-grey:active {
+    background-color: var(--primary-dark);
+    background-image: radial-gradient(circle, var(--admin-grey) 10%, var(--primary) 11%);
+    box-shadow: unset;
 }
 
 .btn.edit-node {
