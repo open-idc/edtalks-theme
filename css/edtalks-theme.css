@@ -217,7 +217,6 @@ a.icon-link:hover,
 a.icon-link:focus {
     color: var(--primary);
     text-decoration: none;
-    speak: none;
 }
 
 a.get-website-url::before {
@@ -469,6 +468,18 @@ header.navbar .navbar-nav > li > a:active {
     .region-top-bar > .views-exposed-form {
         grid-column: unset;
         display: block !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .region.region-top-bar {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .region.region-top-bar {
+        max-width: 1800px;
     }
 }
 
