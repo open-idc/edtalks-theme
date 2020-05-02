@@ -488,6 +488,10 @@ header.navbar .navbar-nav > li > a:active {
 /**
 ** Modal
 **/
+#shareNodeModal {
+    text-align: left;
+}
+
 .modal-body > h5 {
     font-size: 0.8em;
     color: var(--border-dark);
