@@ -8,3 +8,9 @@ form.user-pass {
   max-width: 960px;
   margin: 3em auto 2em auto;
 }
+
+.account-form-footer {
+  max-width: 960px;
+  margin: 3em auto 0;
+  font-size: 0.8em;
+}
