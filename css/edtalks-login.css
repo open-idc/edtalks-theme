@@ -1,0 +1,10 @@
+/**
+** Login, register, reset
+**/
+
+form.user-login-form,
+form.user-register-form,
+form.user-pass {
+  max-width: 960px;
+  margin: 3em auto 2em auto;
+}

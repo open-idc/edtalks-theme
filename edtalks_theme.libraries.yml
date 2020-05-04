@@ -5,6 +5,7 @@ global-styling:
       css/edtalks-nodes.css: {}
       css/edtalks-views.css: {}
       css/edtalks-forms.css: {}
+      css/edtalks-login.css: {}
       css/edtalks-entityforms.css: {}
       css/bootstrap-4-utilities.css: {}
       css/icofont/icofont.min.css: {}
