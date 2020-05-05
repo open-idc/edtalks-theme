@@ -21,6 +21,7 @@ form.user-pass {
 **/
 .field.dashboard-block {
   max-width: 1240px;
+  margin: auto;
 }
 @media (min-width: 1600px) {
   .field.dashboard-block {
@@ -44,6 +45,7 @@ form.user-pass {
 }
 .dashboard-block .table > tbody > tr > td {
   padding: 0.5em;
+  border-bottom: 0px;
 }
 .dashboard-block td.views-field-title > a {
   font-weight: bold;
