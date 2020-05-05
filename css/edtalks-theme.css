@@ -94,6 +94,15 @@ body.navbar-is-fixed-top {
 /**
 ** Buttons
 **/
+
+a {
+    color: var(--primary);
+}
+a:hover,
+a:focus {
+    color: var(--primary-darkest);
+}
+
 .btn {
     box-shadow: unset;
     font-weight: 500;
