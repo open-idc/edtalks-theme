@@ -14,3 +14,38 @@ form.user-pass {
   margin: 3em auto 0;
   font-size: 0.8em;
 }
+
+
+/**
+** User Dashboard
+**/
+.field.dashboard-block {
+  max-width: 1240px;
+}
+@media (min-width: 1600px) {
+  .field.dashboard-block {
+      max-width: 1400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .field.dashboard-block {
+      max-width: 1800px;
+  }
+}
+
+.dashboard-block .table > thead > tr > th {
+  padding: 0.5em;
+  border-bottom: 0px;
+  color: var(--border-dark);
+}
+.dashboard-block .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: unset;
+}
+.dashboard-block .table > tbody > tr > td {
+  padding: 0.5em;
+}
+.dashboard-block td.views-field-title > a {
+  font-weight: bold;
+  color: black;
+}
