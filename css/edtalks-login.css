@@ -45,7 +45,7 @@ form.user-pass {
 }
 .dashboard-block .table > tbody > tr > td {
   padding: 0.5em;
-  border-bottom: 0px;
+  border-top: 0px;
 }
 .dashboard-block td.views-field-title > a {
   font-weight: bold;
