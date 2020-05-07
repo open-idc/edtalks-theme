@@ -19,21 +19,40 @@ form.user-pass {
 /**
 ** User Dashboard
 **/
-.field.dashboard-block {
+.user--type-user.user--view-mode-full {
   max-width: 1240px;
   margin: auto;
 }
 @media (min-width: 1600px) {
-  .field.dashboard-block {
+  .user--type-user.user--view-mode-full{
       max-width: 1400px;
   }
 }
 
 @media (min-width: 1920px) {
-  .field.dashboard-block {
+  .user--type-user.user--view-mode-full {
       max-width: 1800px;
   }
 }
+
+/** remove table responsive elements **/
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    overflow: unset;
+    border: 0;
+    -ms-overflow-style: unset;
+    min-height: unset;
+  }
+  .table-responsive table,
+  .table-responsive thead,
+  .table-responsive th,
+  .table-responsive tbody,
+  .table-responsive tr,
+  .table-responsive td {
+    display: block;
+  }
+}
+
 
 .dashboard-block .table > thead > tr > th {
   padding: 0.5em;
