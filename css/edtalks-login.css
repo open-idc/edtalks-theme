@@ -20,7 +20,7 @@ form.user-pass {
 ** User Dashboard
 **/
 .user--type-user.user--view-mode-full > .field {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 .user--type-user.user--view-mode-full {
   max-width: 1240px;
