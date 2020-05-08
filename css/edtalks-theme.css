@@ -328,6 +328,7 @@ a.node-action:focus {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    min-width: 25%;
     border-radius: 10px;
     box-shadow: var(--shadow-high);
     margin: 0;
