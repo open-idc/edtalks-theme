@@ -21,6 +21,10 @@ form.user-pass {
 **/
 .user--type-user.user--view-mode-full > .field {
   margin-bottom: 4em;
+  position: relative;
+}
+.user--type-user.user--view-mode-full > .field > .field--label {
+  border-bottom: 1px solid #f5f5f5;
 }
 .user--type-user.user--view-mode-full {
   max-width: 1240px;
@@ -57,6 +61,11 @@ form.user-pass {
   }
 }
 
+.dashboard-block > .view-header {
+  position: absolute;
+  top: 0;
+  right:0;
+}
 
 .dashboard-block .table > thead > tr > th {
   padding: 0.5em;
